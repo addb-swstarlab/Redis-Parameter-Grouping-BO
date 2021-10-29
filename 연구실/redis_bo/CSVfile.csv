@@ -1,3 +1,0 @@
-appendonly,appendfsync,auto-aof-rewrite-percentage,auto-aof-rewrite-min-size,no-appendfsync-on-rewrite,aof-rewrite-incremental-fsync,aof-use-rdb-preamble,rdbcompression,rdbchecksum,rdb-save-incremental-fsync,activedefrag,active-defrag-threshold-lower,active-defrag-threshold-upper,active-defrag-cycle-min,active-defrag-cycle-max,maxmemory,maxmemory-policy,maxmemory-samples,lazyfree-lazy-eviction,lazyfree-lazy-expire,lazyfree-lazy-server-del,hash-max-ziplist-entries,hash-max-ziplist-value,activerehashing,hz,dynamic-hz
-,,,,,,,no,no,no,yes,7,83,12,83,,volatile-lfu,7,no,yes,no,636,235,yes,7,no
-,,,,,,,yes,yes,yes,yes,27,89,4,90,,allkeys-random,6,no,no,no,571,166,yes,37,yes

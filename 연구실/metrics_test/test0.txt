@@ -1,7 +1,0 @@
-Sets_Ops/sec	Sets_Hits/sec	Sets_Misses/sec	Sets_Avg_Latency	Sets_p50_Latency	Sets_p99_Latency	Sets_p100_Latency	Sets_KB/sec	Gets_Ops/sec	Gets_Hits/sec	Gets_Misses/sec	Gets_Avg_Latency	Gets_p50_Latency	Gets_p99_Latency	Gets_p100_Latency	Gets_KB/sec	Waits_Ops/sec	Waits_Hits/sec	Waits_Misses/sec	Waits_Avg_Latency	Waits_p50_Latency	Waits_p99_Latency	Waits_p100_Latency	Waits_KB/sec	Totals_Ops/sec	Totals_Hits/sec	Totals_Misses/sec	Totals_Avg_Latency	Totals_p50_Latency	Totals_p99_Latency	Totals_p100_Latency	Totals_KB/sec
-25191.21			0.039	2755.29	25191.21	37.38	25153.82	0.037	888.22	0			0		50382.41	37.38	25153.82	0.038	3643.51												
-25645.23			0.038	2804.95	25645.23	75.4	25569.83	0.036	906.82	0			0		51290.46	75.4	25569.83	0.037	3711.76												
-25725.13			0.038	2813.69	25725.13	75.63	25649.5	0.036	909.64	0			0		51450.26	75.63	25649.5	0.037	3723.33												
-25765.04			0.038	2818.05	25765.04	75.75	25689.29	0.036	911.05	0			0		51530.08	75.75	25689.29	0.037	3729.11												
-25589.23			0.038	2798.82	25589.23	75.23	25514	0.037	904.84	0			0		51178.46	75.23	25514	0.037	3703.66												
-25762.62			0.038	2817.79	25762.62	75.74	25686.88	0.036	910.97	0			0		51525.25	75.74	25686.88	0.037	3728.76												
