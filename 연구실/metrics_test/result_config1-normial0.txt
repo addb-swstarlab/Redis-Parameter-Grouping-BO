@@ -1,0 +1,102 @@
+appendonly	appendfsync	auto-aof-rewrite-percentage	auto-aof-rewrite-min-size	no-appendfsync-on-rewrite	aof-rewrite-incremental-fsync	aof-use-rdb-preamble	save0_0	save0_1	save1_0	save1_1	save2_0	save2_1	rdbcompression	rdbchecksum	rdb-save-incremental-fsync	activedefrag	active-defrag-threshold-lower	active-defrag-threshold-upper	active-defrag-cycle-min	active-defrag-cycle-max	maxmemory	maxmemory-policy	maxmemory-samples	lazyfree-lazy-eviction	lazyfree-lazy-expire	lazyfree-lazy-server-del	hash-max-ziplist-entries	hash-max-ziplist-value	activerehashing	hz	dynamic-hz
+							1100	9	100	100	30	12000	no	yes	yes	yes	8	96	13	80	2600mb	noeviction	6	yes	yes	no	361	183	no	12	no
+							700	9	500	100	90	8000	yes	no	no						1300mb	allkeys-lfu	5	yes	no	yes	335	40	yes	22	yes
+							700	1	100	10	30	12000	yes	yes	no	yes	15	91	7	76	2300mb	volatile-lru	6	no	yes	no	345	140	no	14	no
+							700	1	100	100	30	8000	no	no	yes	yes	7	84	18	80	2600mb	volatile-ttl	6	yes	no	yes	395	169	no	24	yes
+							700	9	500	100	90	8000	no	yes	no	yes	17	87	20	88	2900mb	allkeys-random	5	yes	yes	yes	522	112	yes	19	yes
+							700	1	500	100	30	8000	yes	yes	no	yes	8	89	14	84	1100mb	volatile-lfu	4	yes	no	no	506	142	yes	16	yes
+							1100	9	500	10	30	12000	yes	yes	no	yes	18	85	23	85	1400mb	noeviction	6	yes	yes	yes	458	184	no	31	yes
+							1100	9	100	100	30	8000	no	no	no	yes	20	86	15	81	1200mb	allkeys-random	5	yes	no	no	460	114	yes	6	no
+							1100	1	500	100	90	12000	no	no	no	yes	17	84	14	77	2400mb	volatile-random	5	yes	yes	no	503	91	yes	23	no
+							700	1	500	100	30	8000	no	yes	no						2500mb	volatile-lru	5	no	yes	yes	465	104	yes	9	yes
+							700	1	500	100	90	8000	yes	yes	yes						1200mb	volatile-lfu	5	no	no	no	464	225	no	21	no
+							1100	9	100	100	30	8000	yes	yes	no	yes	16	85	13	76	1800mb	volatile-ttl	6	no	yes	no	387	199	no	10	yes
+							1100	9	100	100	90	12000	yes	yes	no	yes	21	85	11	84	1700mb	volatile-lru	4	no	no	no	640	180	no	16	no
+							1100	9	100	100	90	12000	yes	no	no	yes	22	86	9	83	2500mb	noeviction	5	yes	yes	no	598	163	yes	24	no
+							700	1	100	100	30	8000	no	no	yes						2300mb	volatile-lru	5	yes	yes	yes	576	135	no	21	yes
+							1100	1	500	10	90	12000	yes	no	yes						1000mb	noeviction	5	no	yes	no	590	143	no	23	no
+							1100	9	500	100	90	12000	no	no	yes	yes	15	82	7	79	2800mb	allkeys-lfu	5	yes	no	no	514	159	yes	25	yes
+							700	9	100	10	90	12000	no	yes	no						2100mb	volatile-random	6	yes	no	no	414	213	yes	25	no
+							1100	1	500	10	90	8000	yes	yes	no						1400mb	allkeys-lfu	5	yes	yes	yes	530	222	yes	31	yes
+							1100	1	100	10	90	12000	no	yes	no	yes	25	87	17	76	1800mb	volatile-lru	6	yes	no	no	331	104	no	24	yes
+							1100	9	100	10	30	12000	yes	no	yes						2300mb	noeviction	4	yes	no	no	529	124	no	28	yes
+							700	1	500	10	90	12000	yes	yes	yes						2400mb	volatile-lfu	5	no	no	yes	493	124	yes	24	no
+							1100	9	100	10	30	12000	no	no	no	yes	15	88	25	77	2000mb	noeviction	6	no	no	yes	418	195	yes	19	yes
+							1100	9	500	10	30	12000	yes	yes	yes						2400mb	allkeys-lfu	5	yes	no	no	587	124	yes	24	no
+							1100	9	500	10	30	8000	yes	yes	yes	yes	17	79	7	82	1300mb	volatile-ttl	5	yes	yes	yes	482	131	yes	22	yes
+							1100	1	100	100	90	12000	yes	no	no						2000mb	allkeys-lru	5	yes	no	no	452	128	yes	12	no
+							700	1	500	100	90	8000	yes	yes	yes	yes	16	88	14	76	1000mb	volatile-lfu	5	no	no	yes	319	119	yes	22	no
+							700	1	100	10	30	12000	no	yes	no						1500mb	volatile-ttl	5	yes	no	no	436	147	no	22	no
+							1100	9	100	10	30	8000	yes	no	yes						1700mb	allkeys-lru	6	no	yes	yes	485	89	no	13	yes
+							700	9	100	10	90	12000	yes	yes	no						1900mb	volatile-lfu	4	no	yes	yes	591	169	no	24	no
+							1100	1	100	100	90	12000	yes	yes	no	yes	22	80	13	83	2300mb	allkeys-lru	5	no	no	no	581	120	no	23	no
+							700	1	500	100	90	12000	no	yes	no						1800mb	noeviction	5	no	no	no	393	115	no	26	yes
+							1100	9	100	10	30	12000	no	no	yes	yes	16	88	14	78	2000mb	allkeys-lfu	5	no	no	no	498	210	no	22	no
+							1100	9	100	10	30	12000	no	yes	no						2300mb	volatile-lru	5	yes	yes	yes	574	169	no	19	yes
+							1100	9	500	10	30	8000	no	yes	no						1200mb	volatile-ttl	5	yes	yes	no	500	96	no	19	yes
+							1100	9	500	100	90	8000	yes	no	yes						1500mb	allkeys-lru	6	yes	no	yes	541	134	yes	20	yes
+							1100	9	100	10	90	8000	yes	yes	no						1000mb	allkeys-lfu	4	no	no	yes	405	103	yes	24	no
+							700	1	100	10	30	12000	yes	yes	no	yes	10	80	22	82	2200mb	allkeys-random	6	no	no	yes	408	70	yes	19	yes
+							700	1	500	100	90	12000	yes	no	yes	yes	15	84	12	79	2800mb	volatile-ttl	5	no	no	yes	530	168	yes	15	yes
+							700	9	100	100	30	8000	no	yes	no						1100mb	volatile-lfu	6	yes	yes	yes	546	154	yes	17	yes
+							700	1	100	100	30	8000	no	yes	no						2100mb	volatile-random	6	no	yes	yes	530	222	no	25	no
+							700	9	100	100	30	12000	no	no	no						1400mb	volatile-lfu	4	yes	yes	no	383	159	yes	19	yes
+							700	1	100	10	30	12000	no	yes	no						1900mb	noeviction	4	no	no	yes	489	104	yes	17	yes
+							1100	9	500	100	90	12000	no	no	yes	yes	8	90	15	86	2000mb	allkeys-lfu	6	yes	yes	no	426	196	no	22	yes
+							700	9	500	10	30	8000	no	yes	no	yes	22	87	18	85	2600mb	volatile-ttl	5	yes	yes	no	492	139	no	11	no
+							1100	9	500	100	90	8000	yes	yes	yes	yes	16	87	3	80	2700mb	allkeys-random	4	yes	no	yes	576	146	yes	17	yes
+							700	9	100	10	90	8000	no	no	yes						1900mb	allkeys-lru	6	no	yes	yes	557	59	yes	24	no
+							700	1	500	10	30	8000	yes	yes	yes	yes	7	85	13	79	1800mb	allkeys-random	5	yes	no	no	540	88	yes	13	yes
+							700	1	500	10	30	8000	yes	no	no						1500mb	noeviction	4	no	no	no	497	135	yes	28	no
+							1100	9	500	100	30	12000	no	yes	no	yes	15	79	11	82	2000mb	noeviction	5	yes	no	no	589	131	no	27	no
+							1100	1	100	10	30	12000	no	yes	no	yes	14	78	10	81	2000mb	allkeys-random	5	no	yes	no	475	120	no	26	no
+							1100	9	500	100	30	8000	yes	no	no	yes	12	82	15	83	1900mb	volatile-ttl	5	no	yes	no	614	84	no	33	no
+							1100	1	500	100	30	8000	yes	no	no	yes	15	92	20	76	1100mb	allkeys-lru	4	yes	no	yes	435	168	no	19	no
+							700	1	500	100	90	12000	no	yes	no						1900mb	volatile-ttl	5	no	yes	no	478	48	no	33	yes
+							1100	9	100	10	90	12000	no	no	no						2400mb	noeviction	5	no	yes	no	444	85	no	26	yes
+							1100	1	100	10	30	12000	yes	no	yes	yes	16	94	5	82	2900mb	volatile-ttl	5	yes	no	yes	535	131	no	13	no
+							1100	9	100	100	30	12000	yes	yes	yes	yes	18	81	13	81	1800mb	volatile-lfu	6	no	yes	no	407	93	yes	19	no
+							1100	9	500	100	30	12000	yes	yes	yes						2200mb	noeviction	5	no	yes	yes	409	105	yes	25	no
+							1100	1	500	10	90	12000	yes	yes	no						2400mb	noeviction	5	no	no	no	639	137	yes	26	yes
+							1100	9	100	10	30	12000	no	yes	yes	yes	8	85	21	77	2700mb	volatile-random	5	no	yes	yes	533	105	no	20	no
+							1100	9	500	10	90	8000	no	no	no	yes	11	91	13	78	1200mb	allkeys-lfu	6	no	yes	yes	602	132	yes	22	no
+							1100	9	500	10	30	12000	yes	no	no	yes	19	86	14	80	2500mb	volatile-random	5	no	yes	yes	387	201	no	13	no
+							1100	1	500	100	30	12000	no	yes	no	yes	17	93	13	82	1000mb	volatile-lfu	5	no	no	no	465	123	no	22	yes
+							700	1	500	100	90	8000	yes	yes	yes	yes	15	83	14	86	2700mb	allkeys-random	5	yes	no	yes	557	54	yes	13	no
+							700	9	100	100	90	8000	no	no	yes	yes	17	88	14	81	2800mb	volatile-lru	5	yes	yes	no	603	151	no	28	yes
+							700	1	100	10	90	12000	yes	no	no	yes	16	89	18	84	1100mb	noeviction	5	yes	no	yes	546	173	yes	21	yes
+							1100	9	100	100	90	12000	no	no	no	yes	6	78	18	81	1400mb	allkeys-random	7	yes	yes	yes	510	57	yes	27	no
+							1100	9	100	100	90	12000	yes	no	yes						1400mb	noeviction	6	no	no	yes	591	117	yes	21	no
+							1100	1	100	100	90	8000	yes	yes	yes						2900mb	allkeys-lfu	5	no	yes	no	473	167	yes	4	no
+							1100	9	100	10	30	8000	no	yes	yes						2000mb	volatile-random	5	no	no	no	483	141	yes	12	no
+							1100	1	100	100	90	12000	no	no	no						1500mb	volatile-lru	5	no	yes	no	391	63	yes	25	yes
+							1100	1	500	100	90	12000	no	yes	yes						1600mb	volatile-ttl	5	yes	no	no	457	121	yes	17	yes
+							1100	9	500	10	30	12000	yes	no	no	yes	11	84	18	81	2300mb	allkeys-random	6	yes	no	yes	491	74	no	22	yes
+							1100	9	500	100	90	12000	no	no	no	yes	17	86	16	71	2100mb	noeviction	5	yes	no	no	383	131	no	10	no
+							700	9	100	100	30	12000	yes	yes	no						2300mb	noeviction	4	yes	no	yes	526	81	yes	18	no
+							1100	1	500	100	30	8000	no	yes	no	yes	24	85	16	84	2000mb	volatile-random	4	no	no	yes	532	160	yes	15	yes
+							700	9	500	100	90	8000	no	no	no						1700mb	volatile-lru	5	yes	yes	yes	514	137	yes	26	no
+							700	1	100	10	30	12000	no	yes	yes						1700mb	allkeys-lfu	5	yes	no	no	503	177	no	18	yes
+							700	9	100	10	30	8000	yes	yes	no	yes	14	73	14	82	2100mb	volatile-lfu	4	no	no	no	506	173	no	12	no
+							1100	9	500	100	30	8000	no	yes	yes	yes	16	75	13	81	2800mb	volatile-random	5	yes	yes	yes	474	139	no	22	no
+							1100	1	100	100	30	8000	yes	no	no	yes	23	83	20	77	1700mb	volatile-lru	5	yes	no	no	407	43	no	22	yes
+							1100	1	100	10	30	8000	no	yes	no						1300mb	allkeys-lru	6	yes	yes	yes	481	95	no	30	no
+							700	1	100	10	30	12000	no	yes	no	yes	10	85	8	84	1400mb	volatile-lfu	5	yes	yes	no	616	119	no	19	yes
+							700	1	500	100	90	8000	no	no	yes						1500mb	volatile-lru	4	yes	no	no	449	137	yes	28	no
+							1100	1	100	10	30	12000	no	yes	yes						1600mb	volatile-lfu	5	yes	no	no	486	72	yes	28	no
+							1100	9	100	10	90	12000	yes	no	yes	yes	16	87	15	78	1700mb	allkeys-lfu	6	yes	yes	no	572	150	no	16	no
+							700	9	500	10	90	12000	yes	no	no	yes	14	78	17	74	1800mb	volatile-lfu	6	no	yes	no	461	172	yes	12	no
+							1100	1	500	10	30	8000	no	no	no	yes	18	90	18	81	1400mb	noeviction	4	no	yes	yes	602	211	yes	10	yes
+							1100	9	500	100	30	8000	no	no	yes						1300mb	volatile-random	5	no	no	no	575	156	no	26	yes
+							700	9	500	100	90	8000	no	yes	yes	yes	15	86	16	82	1300mb	volatile-random	6	no	no	yes	475	115	yes	12	no
+							1100	1	500	100	30	12000	yes	yes	no						1100mb	volatile-random	5	yes	yes	yes	454	109	no	34	yes
+							1100	1	100	10	90	12000	yes	yes	yes	yes	10	90	9	80	1900mb	allkeys-lru	6	no	yes	no	335	79	no	29	no
+							700	9	100	100	30	8000	yes	no	no	yes	16	82	11	84	2100mb	volatile-lfu	4	no	yes	yes	406	125	no	27	no
+							700	1	500	100	90	8000	no	yes	no						1100mb	noeviction	6	no	yes	no	326	149	no	33	no
+							1100	9	500	100	30	8000	no	no	yes	yes	17	77	19	79	1800mb	allkeys-random	6	no	yes	no	524	134	no	20	no
+							700	1	100	10	90	12000	yes	no	no						1200mb	volatile-ttl	4	yes	no	no	518	120	yes	20	yes
+							700	1	100	100	30	12000	no	no	no						1900mb	allkeys-lfu	6	no	yes	no	547	161	no	19	yes
+							1100	9	100	10	90	12000	no	yes	yes						2000mb	allkeys-random	5	no	yes	yes	559	157	yes	15	yes
+							1100	1	500	100	90	12000	no	no	no						1100mb	noeviction	5	no	no	yes	484	134	no	19	no
+							1100	9	100	10	90	12000	no	no	no	yes	10	81	11	80	2600mb	allkeys-lru	5	yes	yes	no	286	125	no	20	no
+							700	9	100	100	30	8000	no	no	no						1600mb	allkeys-lru	6	no	yes	yes	595	114	no	27	no
