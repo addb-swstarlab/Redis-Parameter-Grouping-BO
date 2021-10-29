@@ -1,0 +1,1001 @@
+appendonly	appendfsync	auto-aof-rewrite-percentage	auto-aof-rewrite-min-size	no-appendfsync-on-rewrite	aof-rewrite-incremental-fsync	aof-use-rdb-preamble	rdbcompression	rdbchecksum	rdb-save-incremental-fsync	activedefrag	active-defrag-threshold-lower	active-defrag-threshold-upper	active-defrag-cycle-min	active-defrag-cycle-max	maxmemory	maxmemory-policy	maxmemory-samples	lazyfree-lazy-eviction	lazyfree-lazy-expire	lazyfree-lazy-server-del	hash-max-ziplist-entries	hash-max-ziplist-value	activerehashing	hz	dynamic-hz
+							no	no	no	yes	7	83	12	83		volatile-lfu	7	no	yes	no	636	235	yes	7	no
+							no	no	no							volatile-random	3	no	yes	yes	392	67	yes	21	yes
+							no	no	yes	yes	28	93	28	86		volatile-lfu	7	yes	yes	yes	699	94	yes	37	yes
+							no	yes	no							volatile-lfu	7	yes	no	yes	400	136	no	9	no
+							yes	yes	no							volatile-lru	7	yes	no	no	663	218	no	12	no
+							no	no	no							volatile-lfu	7	yes	no	yes	694	133	yes	34	yes
+							no	no	yes	yes	7	81	5	74		allkeys-lfu	5	no	yes	yes	398	51	no	15	no
+							no	no	no							allkeys-random	6	no	yes	yes	289	198	yes	2	yes
+							no	no	yes							volatile-random	4	no	yes	yes	564	76	yes	13	no
+							yes	yes	no	yes	12	95	16	87		volatile-random	5	no	no	no	400	193	yes	12	yes
+							yes	yes	no	yes	1	76	8	70		allkeys-lru	3	yes	no	yes	627	74	yes	18	no
+							no	no	no							volatile-random	4	yes	no	yes	362	234	no	33	yes
+							no	yes	no							allkeys-lfu	3	no	yes	yes	402	177	yes	12	yes
+							no	yes	no							allkeys-lru	4	yes	yes	no	724	177	yes	34	yes
+							no	no	no	yes	17	88	16	77		noeviction	5	no	no	no	677	91	no	21	yes
+							yes	yes	yes							volatile-random	6	yes	yes	no	666	31	no	12	yes
+							no	yes	no							volatile-random	3	no	yes	yes	496	190	no	24	no
+							yes	no	no	yes	1	89	27	71		volatile-ttl	5	no	no	no	301	78	no	17	no
+							yes	no	no	yes	12	92	11	82		volatile-lfu	6	yes	yes	no	281	206	yes	20	yes
+							yes	yes	no	yes	21	75	27	71		allkeys-lru	4	no	no	no	738	40	yes	32	yes
+							yes	yes	yes	yes	30	99	2	87		volatile-lru	5	no	yes	yes	679	40	no	25	yes
+							yes	yes	no							volatile-ttl	7	yes	no	yes	502	68	no	17	yes
+							no	no	yes							allkeys-lru	5	no	yes	yes	628	158	no	28	no
+							no	no	no							noeviction	5	no	yes	no	279	176	yes	4	yes
+							no	no	yes							volatile-random	7	no	no	no	623	195	no	40	no
+							no	no	no	yes	2	87	27	88		noeviction	6	no	yes	yes	544	50	yes	31	yes
+							yes	no	no							allkeys-lfu	4	yes	no	yes	549	135	no	14	yes
+							no	no	yes	yes	2	97	18	90		volatile-lru	3	no	yes	yes	682	156	no	11	no
+							yes	no	no							allkeys-lfu	6	no	no	yes	602	250	yes	17	yes
+							yes	no	no	yes	8	93	4	71		volatile-lfu	4	yes	yes	no	523	156	yes	2	yes
+							no	yes	yes							allkeys-random	6	no	no	yes	668	168	no	26	no
+							yes	yes	no							volatile-random	7	no	yes	no	685	172	no	16	no
+							no	yes	no							noeviction	6	no	no	no	418	25	yes	27	yes
+							no	yes	no	yes	24	80	24	79		allkeys-lru	7	yes	no	no	731	190	no	3	yes
+							yes	no	no	yes	26	75	3	80		volatile-random	4	yes	yes	no	613	79	no	6	no
+							no	no	no							volatile-lru	5	yes	no	yes	747	239	no	13	yes
+							yes	yes	yes	yes	27	88	14	83		allkeys-random	4	yes	no	yes	412	132	yes	40	no
+							yes	no	no							volatile-lru	7	no	no	yes	661	210	no	16	no
+							no	yes	no							volatile-lru	7	no	no	yes	305	189	no	12	no
+							no	yes	no							volatile-ttl	4	no	yes	yes	328	119	no	3	no
+							no	no	yes							volatile-lfu	3	no	no	yes	530	82	yes	16	yes
+							yes	yes	yes							allkeys-random	4	yes	yes	yes	536	231	no	18	no
+							no	no	yes	yes	26	89	7	75		allkeys-lru	6	yes	yes	yes	312	61	yes	27	yes
+							no	no	no							volatile-lfu	3	no	no	no	509	21	yes	29	yes
+							no	no	yes	yes	3	99	26	88		allkeys-lfu	5	yes	yes	yes	463	88	no	26	yes
+							yes	yes	no	yes	8	93	24	77		allkeys-lfu	4	yes	no	no	351	188	no	16	yes
+							yes	no	no	yes	12	93	11	89		allkeys-lru	7	yes	no	yes	528	237	yes	19	yes
+							yes	yes	yes	yes	23	70	25	72		volatile-lfu	6	yes	yes	yes	496	51	no	15	no
+							yes	no	no							volatile-random	3	yes	no	no	714	142	no	20	no
+							no	yes	no	yes	8	90	23	87		volatile-lfu	7	yes	no	no	292	251	no	11	yes
+							no	no	yes							allkeys-lfu	3	no	yes	no	321	256	yes	30	no
+							yes	yes	yes	yes	5	98	29	76		allkeys-lru	3	no	yes	no	378	147	yes	19	no
+							yes	yes	yes							volatile-lru	5	yes	no	yes	705	102	no	29	yes
+							yes	no	yes	yes	22	83	13	76		volatile-lru	7	no	no	no	454	185	yes	29	yes
+							no	no	yes	yes	8	83	9	83		allkeys-lfu	7	no	no	yes	389	183	yes	21	no
+							no	yes	yes	yes	24	100	5	86		noeviction	7	yes	yes	no	599	240	no	20	no
+							yes	yes	no	yes	10	75	7	80		volatile-lfu	5	yes	yes	no	466	133	yes	19	no
+							yes	no	no							volatile-lru	3	yes	yes	no	747	71	no	27	no
+							no	yes	yes							volatile-lru	5	no	yes	no	526	32	yes	4	yes
+							no	no	no	yes	2	90	21	71		volatile-lfu	5	no	no	yes	622	163	no	35	no
+							no	yes	no	yes	14	76	26	71		allkeys-lfu	3	no	no	no	591	125	yes	22	no
+							yes	yes	yes	yes	17	99	8	70		allkeys-lru	3	yes	yes	yes	468	121	no	28	no
+							no	yes	yes	yes	26	100	6	79		volatile-lfu	7	yes	no	no	674	75	yes	13	no
+							no	yes	yes	yes	4	84	12	80		volatile-lfu	6	yes	yes	yes	346	94	no	1	no
+							no	no	no							volatile-random	4	no	yes	yes	257	234	yes	28	no
+							no	no	no							volatile-lru	7	no	yes	no	478	19	no	30	yes
+							no	no	yes							allkeys-lfu	3	no	no	no	383	57	yes	12	no
+							yes	no	yes	yes	13	89	2	77		volatile-lfu	3	yes	no	yes	476	122	no	11	yes
+							yes	no	yes							volatile-random	4	yes	yes	yes	642	234	no	3	yes
+							yes	no	no							allkeys-lfu	3	yes	no	no	747	188	no	10	no
+							yes	no	no							volatile-lru	6	no	no	yes	713	174	yes	31	no
+							yes	yes	yes							volatile-lfu	4	yes	yes	yes	384	182	no	11	no
+							no	no	no	yes	15	70	24	71		volatile-ttl	4	no	yes	no	673	156	no	13	yes
+							yes	yes	yes	yes	25	92	8	86		noeviction	4	no	no	yes	596	156	no	19	no
+							yes	no	yes	yes	14	71	11	86		volatile-lru	6	yes	yes	no	319	48	no	38	yes
+							no	no	no	yes	30	98	4	89		noeviction	5	yes	yes	yes	670	145	no	17	no
+							no	yes	no	yes	29	83	26	75		volatile-random	4	no	no	yes	540	137	no	40	yes
+							no	no	yes	yes	5	91	4	87		allkeys-lru	3	yes	no	yes	564	250	no	30	no
+							yes	yes	no	yes	1	89	18	77		allkeys-random	7	yes	no	no	449	40	no	20	yes
+							no	yes	yes	yes	19	98	25	84		noeviction	7	yes	yes	no	745	94	yes	38	yes
+							no	no	no							volatile-random	6	no	yes	yes	320	97	yes	14	yes
+							yes	yes	no	yes	21	70	4	84		noeviction	3	no	no	yes	641	216	no	9	no
+							no	yes	yes							volatile-lfu	7	no	no	yes	680	235	no	39	yes
+							no	yes	yes							volatile-ttl	7	no	no	no	458	213	no	31	no
+							no	no	no							volatile-random	5	no	no	no	691	250	no	20	yes
+							no	yes	no							noeviction	4	yes	no	no	604	80	yes	14	yes
+							yes	yes	yes	yes	14	83	30	78		volatile-lru	6	no	no	no	669	134	no	34	yes
+							yes	no	yes	yes	11	90	27	84		allkeys-lfu	7	no	yes	no	591	99	no	1	no
+							yes	no	no							volatile-ttl	3	yes	yes	no	402	69	no	39	no
+							yes	yes	yes							allkeys-lru	6	no	yes	no	590	231	yes	23	no
+							yes	yes	no	yes	23	93	2	82		noeviction	3	yes	no	yes	361	77	yes	13	no
+							yes	no	yes							volatile-random	3	no	no	yes	692	212	yes	11	no
+							yes	yes	yes							allkeys-random	5	no	no	yes	546	229	no	17	yes
+							no	yes	no							volatile-lru	5	no	yes	yes	410	97	yes	33	yes
+							no	no	no	yes	8	97	6	72		allkeys-lfu	6	yes	no	no	730	248	no	34	yes
+							no	no	yes							volatile-lfu	6	no	yes	no	313	213	no	20	yes
+							yes	yes	yes	yes	27	80	1	87		allkeys-random	3	no	yes	yes	744	244	no	11	yes
+							yes	no	yes	yes	29	71	3	87		allkeys-random	3	yes	no	yes	286	215	no	25	no
+							no	yes	yes							volatile-lfu	4	no	yes	no	686	144	yes	23	yes
+							no	yes	yes							allkeys-lfu	4	yes	no	yes	585	81	yes	10	no
+							yes	yes	yes	yes	24	96	11	83		allkeys-lru	5	no	yes	yes	477	150	yes	30	no
+							no	no	yes	yes	20	89	4	80		volatile-lru	4	yes	no	yes	734	208	yes	11	yes
+							yes	yes	yes							allkeys-lru	3	yes	yes	yes	394	219	no	3	yes
+							yes	yes	yes							volatile-ttl	6	yes	yes	yes	257	83	no	7	no
+							no	no	no	yes	3	94	21	74		allkeys-random	4	yes	yes	no	639	167	yes	12	yes
+							no	yes	yes	yes	12	90	6	81		volatile-random	3	yes	yes	no	319	226	yes	1	yes
+							yes	yes	yes	yes	23	86	12	72		allkeys-lfu	3	yes	yes	yes	536	178	no	25	yes
+							yes	yes	yes							allkeys-lfu	4	no	no	no	616	117	no	8	yes
+							yes	yes	yes	yes	22	84	24	82		volatile-ttl	3	yes	no	yes	323	31	no	25	no
+							no	no	no							volatile-random	5	yes	no	yes	327	80	yes	21	yes
+							yes	no	yes							noeviction	3	no	yes	yes	471	55	no	20	no
+							no	no	yes	yes	11	90	15	71		noeviction	7	no	no	yes	313	228	yes	17	no
+							yes	no	no							allkeys-lfu	6	no	yes	yes	399	213	no	33	yes
+							no	yes	no	yes	29	74	24	76		volatile-lru	5	yes	no	yes	497	142	no	27	no
+							yes	yes	no	yes	18	81	27	78		volatile-random	5	no	no	no	505	95	yes	35	yes
+							no	no	no	yes	15	73	21	83		noeviction	6	no	yes	no	333	254	yes	34	yes
+							no	yes	yes	yes	23	75	12	83		volatile-random	4	yes	yes	no	673	252	yes	2	yes
+							yes	no	yes	yes	28	88	3	85		volatile-lru	3	yes	yes	yes	531	128	yes	21	no
+							yes	no	no	yes	22	75	8	76		volatile-lru	4	no	yes	yes	424	93	yes	10	yes
+							yes	yes	no							allkeys-lru	6	yes	yes	no	424	157	no	16	no
+							yes	no	yes							noeviction	3	no	yes	yes	538	241	yes	15	yes
+							no	no	no							volatile-random	4	yes	no	no	319	87	yes	29	no
+							no	yes	yes	yes	4	98	2	74		volatile-ttl	6	no	no	yes	393	42	yes	18	yes
+							yes	yes	no							volatile-lru	3	no	yes	no	423	219	no	37	yes
+							yes	yes	yes							volatile-ttl	5	no	no	yes	310	86	no	36	yes
+							yes	no	yes	yes	30	79	5	76		allkeys-lru	3	yes	yes	no	439	55	no	1	no
+							yes	yes	yes							volatile-lru	7	yes	no	no	430	252	no	19	yes
+							no	yes	yes							allkeys-random	7	yes	yes	yes	525	178	yes	30	yes
+							yes	no	no							allkeys-random	4	yes	yes	no	419	159	yes	6	yes
+							yes	yes	no	yes	10	80	4	80		volatile-ttl	3	yes	no	no	457	99	yes	17	yes
+							yes	yes	no							volatile-random	7	yes	no	no	398	134	no	26	yes
+							yes	yes	no							allkeys-lru	7	yes	yes	yes	401	47	yes	25	yes
+							no	no	no	yes	6	82	17	75		noeviction	5	yes	no	yes	584	222	yes	21	no
+							yes	yes	no	yes	15	75	20	79		volatile-lfu	5	no	no	no	355	122	yes	24	no
+							no	yes	yes							volatile-ttl	6	yes	no	yes	291	218	no	21	no
+							no	no	no	yes	2	76	2	81		noeviction	5	yes	yes	no	440	123	no	22	yes
+							yes	no	yes	yes	27	94	11	72		allkeys-random	4	no	no	yes	432	136	no	39	yes
+							yes	yes	yes							allkeys-random	6	no	yes	no	545	16	no	1	no
+							yes	no	no							volatile-lru	7	yes	no	yes	666	239	yes	16	yes
+							yes	no	yes	yes	2	78	25	88		volatile-lru	4	no	yes	yes	599	175	yes	39	yes
+							no	yes	no	yes	16	90	19	83		volatile-ttl	7	no	no	no	365	60	yes	15	no
+							no	yes	yes	yes	21	85	23	75		volatile-lfu	6	yes	yes	no	476	56	no	6	no
+							no	yes	yes							volatile-ttl	5	no	no	no	612	144	yes	18	no
+							yes	yes	no	yes	24	83	27	74		volatile-lru	5	yes	no	yes	535	206	no	2	yes
+							yes	no	yes	yes	28	88	26	70		volatile-random	7	no	yes	no	469	188	yes	23	yes
+							no	yes	yes							allkeys-lru	6	no	no	no	722	135	yes	29	yes
+							yes	yes	yes							allkeys-lru	7	no	yes	no	580	65	yes	19	yes
+							yes	no	yes							allkeys-lru	7	yes	no	no	595	248	yes	4	no
+							yes	no	yes							allkeys-lru	6	yes	no	no	400	28	yes	2	no
+							no	no	yes							volatile-ttl	5	yes	no	no	584	36	no	7	no
+							yes	no	no	yes	10	77	16	71		volatile-lru	3	no	no	yes	363	105	yes	15	no
+							no	no	yes	yes	8	94	15	89		allkeys-lfu	3	yes	yes	yes	448	248	yes	4	no
+							yes	no	yes	yes	4	99	2	84		allkeys-lru	5	no	no	no	317	39	no	9	yes
+							yes	yes	no							allkeys-lru	4	no	no	yes	466	49	yes	12	no
+							no	yes	yes							allkeys-lfu	4	yes	no	yes	607	37	yes	40	no
+							no	yes	yes							allkeys-lfu	7	no	no	yes	494	224	yes	18	yes
+							no	yes	no	yes	25	98	24	71		volatile-ttl	3	no	no	yes	743	228	yes	26	no
+							no	yes	yes							volatile-random	4	no	yes	yes	562	208	yes	19	no
+							no	yes	yes							volatile-lru	4	yes	no	yes	289	196	no	20	yes
+							no	yes	yes							allkeys-lru	7	no	no	yes	720	221	no	39	no
+							yes	no	no							volatile-ttl	3	no	yes	yes	696	84	no	13	no
+							no	no	no							volatile-random	3	yes	yes	yes	395	239	no	6	no
+							no	yes	yes							volatile-lfu	5	yes	no	no	523	242	no	19	no
+							yes	no	yes	yes	2	77	8	77		noeviction	7	yes	no	yes	592	204	no	35	yes
+							yes	yes	no							volatile-lfu	7	no	no	no	516	21	no	22	yes
+							yes	yes	yes	yes	23	70	1	86		allkeys-lfu	7	no	yes	no	455	220	no	36	yes
+							yes	yes	no							volatile-lfu	5	no	yes	no	296	49	no	11	yes
+							no	yes	yes							volatile-lfu	7	no	yes	no	663	36	yes	40	no
+							yes	yes	no	yes	4	80	19	89		noeviction	4	no	no	no	493	95	no	37	yes
+							no	no	yes	yes	14	90	26	72		volatile-lru	5	yes	yes	no	598	211	no	34	yes
+							no	no	no	yes	11	80	20	80		volatile-lru	6	no	no	yes	389	148	yes	31	yes
+							no	yes	yes	yes	26	86	25	71		allkeys-lfu	7	no	no	no	680	32	yes	28	no
+							no	yes	yes	yes	14	85	15	88		volatile-ttl	7	no	yes	no	703	232	yes	20	yes
+							no	yes	yes							allkeys-lfu	3	no	yes	yes	701	142	yes	2	no
+							no	yes	no	yes	12	75	29	77		volatile-random	6	yes	no	no	464	191	yes	23	no
+							yes	yes	yes							allkeys-lru	5	yes	yes	no	464	197	no	13	no
+							no	yes	no	yes	20	70	14	89		volatile-random	6	no	yes	no	646	244	yes	4	no
+							yes	yes	no							volatile-lru	4	no	no	no	265	213	no	11	no
+							no	no	yes							volatile-lru	6	no	no	yes	479	180	no	10	no
+							yes	yes	yes							volatile-random	3	yes	no	yes	260	144	yes	38	no
+							yes	yes	no	yes	30	74	14	83		noeviction	4	yes	yes	yes	452	28	yes	12	yes
+							yes	no	yes	yes	21	97	5	82		allkeys-lfu	7	no	no	yes	425	165	yes	17	no
+							no	yes	no	yes	29	80	10	84		volatile-lru	7	yes	yes	yes	470	59	yes	18	yes
+							no	no	yes							allkeys-lru	4	no	no	no	693	236	yes	15	yes
+							no	no	no							noeviction	6	yes	yes	no	361	94	yes	39	yes
+							no	no	no	yes	16	74	16	84		allkeys-lfu	6	yes	no	no	680	246	yes	16	yes
+							no	no	yes	yes	12	70	9	70		volatile-random	5	no	no	no	617	67	yes	14	no
+							no	yes	yes							volatile-ttl	3	no	no	yes	640	142	yes	18	yes
+							no	yes	no							noeviction	3	no	no	yes	585	172	yes	2	no
+							no	yes	yes	yes	11	91	22	71		volatile-lru	7	no	no	yes	631	64	yes	10	yes
+							yes	no	no	yes	9	71	15	88		volatile-lru	4	yes	yes	no	694	64	no	32	no
+							no	yes	yes							allkeys-random	3	no	yes	no	614	100	yes	6	no
+							no	no	no							allkeys-random	4	yes	no	no	284	139	no	30	yes
+							no	yes	yes							allkeys-random	5	no	no	yes	292	134	yes	2	yes
+							yes	no	yes	yes	16	100	17	73		allkeys-random	7	yes	no	yes	721	146	yes	9	no
+							yes	no	yes							allkeys-lru	4	yes	yes	no	271	132	yes	33	no
+							no	yes	no	yes	25	100	15	73		allkeys-lru	3	no	yes	no	625	80	yes	15	no
+							yes	yes	yes							allkeys-lfu	7	yes	yes	no	717	56	yes	6	no
+							no	no	no							allkeys-lru	5	no	no	yes	371	181	no	38	no
+							yes	no	no	yes	3	88	16	76		volatile-lru	4	yes	no	no	427	99	no	34	yes
+							yes	yes	no							allkeys-lfu	6	no	no	no	708	154	no	27	yes
+							no	no	yes	yes	25	84	20	86		volatile-ttl	3	yes	no	yes	578	160	yes	39	no
+							no	no	yes	yes	6	84	30	84		volatile-random	6	yes	yes	yes	490	85	no	40	yes
+							yes	yes	yes							volatile-lru	5	yes	no	no	266	240	yes	33	no
+							yes	yes	yes							allkeys-random	5	no	no	yes	537	166	yes	33	yes
+							no	no	no	yes	9	97	9	82		volatile-random	3	yes	no	yes	699	114	yes	31	no
+							yes	yes	yes							allkeys-lfu	3	no	yes	no	303	66	yes	35	no
+							yes	yes	yes	yes	30	96	30	76		volatile-ttl	7	no	yes	yes	539	175	no	13	no
+							yes	no	no	yes	6	80	7	71		volatile-ttl	4	yes	yes	yes	443	118	no	40	no
+							no	no	yes							volatile-lru	5	no	no	yes	721	25	no	12	no
+							yes	no	no	yes	11	91	23	88		volatile-ttl	6	yes	no	no	582	205	no	40	no
+							no	yes	no							volatile-lru	6	yes	yes	yes	459	229	yes	14	yes
+							yes	no	yes							volatile-ttl	7	no	yes	yes	670	214	no	17	yes
+							yes	no	yes	yes	12	94	27	74		allkeys-random	5	no	no	no	630	208	yes	22	yes
+							no	yes	yes	yes	5	92	1	88		volatile-lru	5	yes	yes	yes	298	223	yes	35	no
+							yes	yes	yes	yes	1	91	3	74		volatile-lru	3	yes	yes	no	415	164	yes	19	yes
+							yes	yes	yes	yes	13	73	19	86		allkeys-lru	7	yes	no	yes	439	78	yes	5	yes
+							no	no	yes							volatile-ttl	7	no	yes	yes	350	52	no	2	yes
+							no	yes	yes							allkeys-random	7	no	no	no	736	255	no	23	no
+							yes	yes	no	yes	1	98	2	72		volatile-lru	6	yes	yes	yes	749	188	no	5	yes
+							no	no	yes							volatile-lfu	5	yes	no	no	712	240	no	38	no
+							no	no	no	yes	30	96	20	90		volatile-lru	5	no	no	yes	622	151	no	18	no
+							no	no	no							volatile-lru	3	yes	no	no	376	67	no	7	no
+							yes	no	yes	yes	6	85	13	79		volatile-lfu	4	no	no	yes	282	195	yes	26	no
+							yes	yes	no	yes	29	100	14	70		allkeys-random	4	no	no	no	443	199	no	8	yes
+							yes	no	no	yes	19	74	22	71		allkeys-lru	3	yes	yes	yes	695	150	no	5	no
+							yes	no	no							allkeys-random	4	yes	yes	yes	382	219	no	3	yes
+							yes	no	no	yes	30	87	25	73		noeviction	7	no	no	no	458	72	yes	25	yes
+							no	yes	yes	yes	4	81	19	90		noeviction	6	no	no	no	484	149	no	19	yes
+							no	no	yes							volatile-random	3	no	no	no	301	244	no	20	yes
+							no	no	no							volatile-random	6	no	no	no	394	127	no	11	no
+							yes	yes	yes							volatile-lfu	6	no	no	no	486	46	no	18	no
+							no	no	no							allkeys-random	6	no	yes	yes	329	189	yes	7	yes
+							no	yes	yes	yes	26	85	29	77		volatile-random	5	no	no	no	595	59	no	27	yes
+							no	yes	yes							noeviction	7	yes	yes	yes	472	186	yes	2	no
+							yes	yes	yes	yes	18	71	3	82		allkeys-random	4	no	no	no	585	214	yes	11	no
+							yes	yes	no							allkeys-lfu	5	yes	yes	no	440	107	no	31	yes
+							yes	yes	yes	yes	1	92	21	75		volatile-lru	5	no	yes	yes	579	87	yes	28	no
+							no	no	yes	yes	27	84	16	88		allkeys-lru	5	yes	no	no	729	45	yes	4	no
+							no	yes	yes	yes	16	72	20	87		noeviction	7	no	yes	no	504	100	no	19	no
+							yes	no	yes							volatile-lru	5	no	no	yes	724	17	no	38	no
+							yes	no	no	yes	2	89	15	72		volatile-ttl	4	no	yes	yes	720	194	no	1	no
+							no	yes	yes	yes	5	77	4	89		volatile-lfu	7	yes	yes	no	714	52	yes	17	yes
+							yes	no	no							noeviction	7	yes	no	no	652	245	no	11	yes
+							yes	no	no	yes	3	77	2	89		noeviction	7	yes	yes	no	473	133	yes	6	no
+							yes	no	no							allkeys-lru	7	no	yes	yes	676	212	no	17	yes
+							yes	no	yes	yes	17	94	7	83		noeviction	7	no	no	yes	478	36	no	16	yes
+							no	yes	yes							volatile-random	5	yes	no	no	518	246	yes	40	yes
+							no	yes	yes							volatile-lfu	6	no	yes	yes	385	156	no	17	yes
+							yes	yes	no	yes	9	78	15	90		noeviction	4	no	no	yes	467	168	no	12	no
+							yes	no	no	yes	30	96	4	72		volatile-ttl	5	no	no	yes	334	248	no	21	no
+							no	yes	no							noeviction	3	yes	yes	yes	608	52	yes	19	yes
+							yes	yes	yes							noeviction	3	yes	yes	yes	311	61	yes	18	yes
+							yes	yes	yes							volatile-lfu	5	no	yes	no	307	177	no	2	yes
+							no	yes	yes	yes	19	97	30	77		volatile-ttl	6	yes	yes	yes	666	109	no	17	no
+							no	yes	no							allkeys-random	6	yes	yes	yes	334	199	yes	28	yes
+							yes	yes	yes							allkeys-lru	7	yes	no	no	509	188	yes	25	no
+							no	yes	yes	yes	14	70	19	78		volatile-random	3	no	yes	yes	370	189	yes	39	no
+							yes	no	no	yes	19	77	24	77		volatile-lru	4	no	no	yes	360	51	yes	14	yes
+							yes	no	no	yes	19	86	24	83		allkeys-lfu	5	yes	no	yes	426	36	yes	11	yes
+							no	yes	yes	yes	24	73	10	90		volatile-lru	7	no	yes	no	545	218	no	20	yes
+							no	no	yes	yes	23	86	25	83		volatile-random	4	no	yes	no	308	142	no	20	no
+							yes	no	yes							allkeys-lfu	3	yes	no	no	485	40	yes	27	yes
+							no	yes	no	yes	3	91	17	88		allkeys-lfu	3	yes	yes	yes	498	107	no	2	no
+							no	yes	no	yes	14	82	24	82		volatile-random	4	yes	no	yes	260	99	no	26	yes
+							no	no	no	yes	5	73	1	84		volatile-random	6	yes	no	no	263	56	no	26	no
+							no	no	yes	yes	18	99	9	89		volatile-ttl	7	no	yes	yes	276	146	yes	15	no
+							no	yes	no							volatile-lfu	4	yes	no	no	413	171	yes	32	yes
+							yes	yes	yes							volatile-lfu	5	no	no	yes	437	215	yes	10	no
+							no	yes	no	yes	12	98	7	79		volatile-random	4	yes	yes	yes	451	223	no	40	no
+							no	yes	yes	yes	8	98	2	85		allkeys-lru	7	no	no	no	324	250	yes	24	yes
+							no	no	no	yes	11	84	19	87		allkeys-lru	4	no	no	no	448	216	yes	40	no
+							no	yes	no							allkeys-lfu	6	yes	no	no	401	73	no	23	yes
+							yes	yes	no	yes	26	84	23	88		noeviction	7	yes	yes	no	498	161	no	38	yes
+							no	yes	no	yes	12	85	20	86		volatile-lru	5	no	no	no	541	208	no	5	no
+							no	yes	yes							allkeys-lfu	7	yes	yes	yes	371	70	no	24	no
+							no	no	yes	yes	15	93	19	73		volatile-lfu	4	no	no	no	384	197	yes	15	no
+							no	yes	no							noeviction	7	no	no	yes	707	146	no	18	no
+							no	no	yes	yes	21	92	25	87		allkeys-lfu	6	yes	yes	yes	438	90	no	36	no
+							no	yes	no	yes	9	84	22	70		allkeys-lru	3	no	yes	no	398	241	yes	24	yes
+							yes	yes	no	yes	5	80	19	81		allkeys-lfu	7	no	yes	yes	489	17	no	12	no
+							no	no	yes							volatile-ttl	4	yes	yes	yes	537	92	yes	10	no
+							no	no	no	yes	12	74	1	88		volatile-lfu	7	no	no	no	327	148	yes	1	yes
+							no	yes	yes	yes	26	79	8	73		volatile-lru	5	yes	yes	no	260	20	yes	31	yes
+							yes	no	no							volatile-lfu	6	yes	yes	no	402	120	yes	27	no
+							no	yes	no							allkeys-random	5	yes	yes	no	266	223	yes	17	yes
+							no	no	no							volatile-ttl	6	no	no	yes	354	37	no	7	yes
+							yes	yes	yes	yes	24	85	2	90		volatile-lfu	6	yes	yes	no	454	109	no	24	no
+							yes	yes	yes	yes	17	90	11	73		volatile-random	3	no	yes	no	722	232	yes	8	no
+							no	no	no							allkeys-lfu	5	no	no	no	299	143	yes	22	yes
+							no	no	yes							volatile-lru	7	no	yes	yes	599	182	yes	8	no
+							yes	no	no							volatile-random	4	no	no	no	488	132	no	31	no
+							no	yes	yes							volatile-lfu	5	yes	yes	no	712	85	no	37	yes
+							yes	yes	yes	yes	16	91	26	80		allkeys-lfu	4	yes	no	no	366	244	yes	3	no
+							no	no	no							volatile-ttl	4	yes	yes	yes	514	103	yes	19	yes
+							yes	yes	yes							allkeys-random	4	no	yes	yes	493	134	yes	33	yes
+							no	yes	no	yes	21	87	15	89		allkeys-lru	7	yes	no	yes	450	74	no	26	yes
+							yes	no	no							volatile-lru	6	no	yes	no	580	90	yes	38	no
+							no	yes	yes	yes	30	96	23	77		volatile-lfu	5	yes	no	no	506	192	no	38	no
+							no	no	no							noeviction	4	no	yes	no	373	95	yes	26	yes
+							yes	no	yes							allkeys-random	5	no	no	no	572	146	yes	27	no
+							yes	yes	no	yes	2	97	15	72		noeviction	3	yes	yes	yes	353	228	yes	20	yes
+							yes	no	no	yes	10	82	21	81		volatile-random	4	no	yes	no	642	170	no	35	yes
+							no	yes	no							volatile-random	6	yes	no	yes	608	99	no	2	yes
+							yes	no	yes	yes	14	80	30	71		volatile-lru	5	no	yes	yes	418	124	no	27	no
+							yes	no	yes	yes	22	90	11	82		volatile-lfu	5	yes	yes	no	334	83	no	7	yes
+							yes	yes	yes							allkeys-lfu	4	no	yes	yes	379	114	no	34	no
+							no	yes	no	yes	7	73	16	75		allkeys-lfu	7	yes	no	no	678	216	no	31	yes
+							yes	yes	yes	yes	22	73	30	86		allkeys-lfu	4	yes	no	yes	272	200	no	39	yes
+							no	yes	no	yes	24	76	10	83		volatile-lru	7	no	yes	yes	629	205	yes	36	no
+							no	no	no							allkeys-lfu	6	no	no	no	639	114	no	37	yes
+							yes	no	no							allkeys-lfu	4	no	yes	no	321	109	no	33	no
+							no	no	yes	yes	30	75	25	78		volatile-random	3	no	yes	no	509	73	yes	12	no
+							yes	no	no	yes	29	98	27	81		volatile-lru	5	no	yes	yes	747	202	no	30	yes
+							yes	yes	yes	yes	25	100	3	70		volatile-lru	3	yes	yes	yes	703	35	yes	25	no
+							yes	no	yes	yes	2	88	12	78		volatile-lfu	5	yes	yes	yes	594	139	no	16	yes
+							no	yes	yes							allkeys-random	7	no	yes	yes	273	177	no	7	yes
+							yes	yes	yes	yes	9	96	17	87		allkeys-lru	3	yes	yes	yes	672	244	no	1	yes
+							no	yes	yes	yes	11	76	14	90		volatile-ttl	7	no	yes	no	273	214	yes	17	no
+							yes	no	yes							allkeys-lru	5	no	no	no	437	117	no	29	no
+							yes	yes	yes							volatile-ttl	5	no	no	no	609	215	yes	13	no
+							no	yes	yes	yes	5	83	23	70		noeviction	7	no	no	no	421	197	no	6	no
+							no	no	no	yes	24	93	15	71		noeviction	5	no	yes	no	458	64	yes	19	no
+							yes	no	no	yes	13	88	20	78		allkeys-random	3	yes	yes	yes	623	32	no	20	no
+							no	no	no	yes	10	72	22	76		volatile-lfu	3	no	yes	yes	261	182	no	36	yes
+							yes	no	no							volatile-ttl	4	no	yes	yes	733	179	no	13	no
+							no	no	yes	yes	5	73	16	77		noeviction	5	yes	no	yes	418	51	yes	38	yes
+							yes	yes	no	yes	23	92	29	84		volatile-ttl	7	no	yes	no	750	130	no	22	yes
+							no	no	yes							volatile-lru	3	no	no	yes	599	129	yes	40	no
+							yes	yes	yes	yes	10	100	28	76		allkeys-lfu	3	no	no	yes	480	34	yes	27	yes
+							no	yes	yes	yes	28	88	7	90		volatile-random	7	no	yes	no	394	127	yes	15	yes
+							yes	yes	no	yes	10	92	4	82		noeviction	3	yes	yes	yes	601	180	yes	17	yes
+							yes	no	yes							volatile-lfu	4	no	yes	no	723	48	yes	16	no
+							yes	no	yes	yes	16	73	23	81		volatile-lru	5	yes	no	yes	564	84	yes	4	no
+							yes	yes	no							volatile-ttl	6	no	no	yes	568	181	no	10	yes
+							no	yes	yes	yes	5	94	9	79		volatile-ttl	3	no	yes	yes	554	158	yes	12	yes
+							yes	no	no							volatile-random	7	no	no	yes	466	138	no	7	no
+							no	yes	no							allkeys-random	6	yes	yes	yes	543	223	yes	3	yes
+							no	yes	no	yes	6	94	30	87		noeviction	5	no	yes	yes	286	38	no	37	no
+							yes	yes	no							volatile-random	6	yes	yes	yes	426	247	yes	13	yes
+							yes	yes	no							volatile-random	5	yes	no	no	382	43	yes	33	no
+							no	yes	no							volatile-lfu	5	yes	no	no	461	142	yes	38	no
+							no	no	yes	yes	29	74	23	78		volatile-random	7	no	yes	no	431	177	no	33	yes
+							no	no	no	yes	12	72	29	79		allkeys-lfu	6	yes	yes	no	422	20	yes	4	no
+							yes	yes	no							volatile-lfu	5	yes	no	no	725	213	yes	16	yes
+							yes	yes	no							noeviction	3	no	no	yes	473	106	no	14	yes
+							yes	yes	yes	yes	6	87	11	90		noeviction	4	yes	no	yes	611	17	no	7	no
+							no	no	no	yes	25	76	2	79		allkeys-lru	3	yes	no	yes	571	129	no	32	yes
+							yes	yes	yes	yes	21	88	15	85		volatile-random	3	no	no	yes	738	31	no	12	yes
+							yes	no	yes							volatile-ttl	6	yes	no	yes	449	43	yes	15	yes
+							no	yes	no							allkeys-lru	6	no	no	no	480	73	yes	32	no
+							no	yes	no	yes	15	93	17	71		noeviction	5	yes	no	no	433	189	yes	6	no
+							yes	yes	yes							volatile-lru	4	no	yes	no	627	159	yes	18	yes
+							yes	yes	no							allkeys-lfu	5	no	no	no	659	72	no	39	no
+							no	no	yes	yes	1	89	14	89		allkeys-lfu	5	yes	no	yes	347	225	no	6	yes
+							no	no	no	yes	23	92	28	72		volatile-ttl	3	yes	no	yes	616	37	yes	38	yes
+							no	no	no							allkeys-random	6	yes	no	yes	427	176	no	39	yes
+							no	no	no							volatile-lru	3	no	yes	yes	312	127	yes	2	yes
+							no	yes	yes	yes	22	74	25	74		volatile-random	3	yes	yes	no	596	85	yes	40	yes
+							no	no	no	yes	24	84	24	83		allkeys-lfu	5	no	no	no	743	42	yes	24	yes
+							yes	yes	yes	yes	29	92	8	85		volatile-lfu	6	no	no	no	377	176	no	20	no
+							yes	no	yes	yes	17	87	12	76		allkeys-random	4	yes	yes	no	697	172	yes	11	no
+							no	yes	no							allkeys-random	5	yes	no	no	536	252	yes	3	yes
+							yes	yes	yes							volatile-lfu	7	no	no	yes	659	115	no	6	no
+							no	yes	no							noeviction	5	yes	yes	yes	669	140	no	14	yes
+							no	yes	yes	yes	24	97	11	88		allkeys-random	6	no	no	yes	617	161	no	20	yes
+							no	no	no							volatile-ttl	5	yes	no	no	661	99	yes	4	yes
+							yes	yes	yes	yes	29	94	16	89		allkeys-lru	3	no	yes	yes	260	217	yes	14	yes
+							yes	no	no							allkeys-lru	5	yes	yes	no	721	128	yes	24	no
+							yes	no	no							volatile-random	6	yes	yes	no	421	74	no	10	yes
+							no	no	no							allkeys-lfu	4	yes	yes	yes	718	192	no	20	no
+							no	yes	yes							allkeys-lfu	6	yes	yes	yes	735	140	yes	28	no
+							no	no	yes							allkeys-lfu	4	no	yes	no	750	26	yes	17	yes
+							no	yes	no	yes	16	72	24	75		volatile-lfu	7	yes	no	no	500	243	yes	34	yes
+							no	no	no							volatile-lru	3	yes	no	no	442	39	no	23	yes
+							yes	no	no	yes	18	73	12	90		volatile-ttl	4	no	no	yes	628	102	yes	1	no
+							yes	yes	yes							volatile-random	5	yes	yes	no	732	160	no	29	yes
+							yes	yes	no							noeviction	5	no	yes	no	580	72	yes	26	yes
+							no	no	yes							allkeys-random	4	yes	no	no	453	88	yes	21	yes
+							yes	no	no							volatile-lru	4	yes	no	yes	428	57	yes	19	no
+							yes	no	no							noeviction	5	no	no	no	463	54	no	8	no
+							yes	no	yes	yes	15	75	17	88		allkeys-lru	7	no	yes	no	341	209	yes	22	no
+							yes	yes	no	yes	26	81	7	81		volatile-lfu	3	yes	yes	yes	478	232	no	34	yes
+							yes	yes	yes	yes	7	74	6	81		allkeys-lfu	6	yes	yes	yes	521	219	no	17	yes
+							no	yes	yes							noeviction	4	no	no	no	721	252	yes	7	yes
+							yes	no	yes	yes	5	75	3	76		noeviction	3	yes	yes	no	706	109	no	37	no
+							no	no	yes							allkeys-random	3	yes	yes	yes	707	150	no	37	no
+							no	no	yes	yes	29	75	27	84		volatile-ttl	3	no	no	yes	727	62	yes	22	no
+							no	no	no							allkeys-random	6	yes	yes	no	273	251	no	8	yes
+							yes	no	yes							noeviction	7	no	no	no	441	123	yes	30	yes
+							no	no	yes							volatile-lru	4	no	yes	yes	733	187	yes	38	no
+							yes	no	no							volatile-lfu	4	no	no	yes	520	152	no	5	yes
+							no	yes	yes	yes	16	70	25	77		allkeys-lfu	4	no	yes	no	318	93	no	28	no
+							no	no	yes							volatile-lru	6	yes	yes	yes	311	188	yes	37	yes
+							yes	no	no	yes	20	75	26	85		volatile-ttl	6	yes	yes	yes	324	172	yes	37	yes
+							yes	no	no	yes	10	79	23	71		volatile-ttl	5	yes	no	yes	518	107	yes	32	no
+							no	yes	yes	yes	6	75	1	89		volatile-lru	5	no	yes	no	517	29	no	23	yes
+							no	yes	yes	yes	3	73	16	83		allkeys-lru	5	yes	yes	yes	376	31	no	6	no
+							yes	yes	no							volatile-ttl	6	yes	no	no	276	37	yes	19	no
+							yes	yes	no	yes	26	72	27	86		noeviction	6	yes	no	no	359	256	no	2	no
+							no	no	no							allkeys-random	3	yes	yes	no	268	220	yes	38	yes
+							yes	no	no							volatile-ttl	5	no	no	no	677	70	no	28	no
+							no	no	yes							allkeys-random	7	yes	yes	yes	533	233	no	37	yes
+							yes	yes	no							volatile-lru	5	yes	no	yes	693	111	no	24	yes
+							no	no	yes	yes	7	70	14	84		allkeys-lfu	6	no	yes	yes	377	22	no	32	yes
+							yes	no	yes	yes	1	71	20	85		volatile-random	3	no	yes	yes	388	197	yes	13	yes
+							no	no	yes	yes	23	71	8	79		volatile-ttl	3	yes	no	yes	423	159	no	35	yes
+							no	yes	yes							volatile-ttl	6	no	yes	no	464	125	no	38	no
+							no	yes	yes							volatile-random	7	no	no	no	661	243	no	28	no
+							no	yes	yes							volatile-lfu	4	no	no	yes	735	53	yes	1	no
+							yes	no	no	yes	23	94	8	76		noeviction	5	yes	no	yes	624	132	yes	15	no
+							no	yes	no							allkeys-lfu	4	no	no	no	457	56	yes	12	yes
+							yes	no	no							noeviction	3	yes	yes	yes	360	97	yes	32	yes
+							yes	yes	yes	yes	10	75	25	83		volatile-random	3	yes	yes	yes	412	118	no	39	yes
+							yes	yes	no	yes	28	85	24	71		volatile-ttl	6	no	yes	yes	634	247	no	28	no
+							yes	yes	no							volatile-ttl	3	no	yes	yes	524	96	no	35	no
+							yes	no	yes							allkeys-lfu	7	no	yes	no	381	188	yes	15	yes
+							yes	yes	yes							noeviction	3	no	yes	no	352	232	yes	8	no
+							no	no	no	yes	29	72	16	90		allkeys-lfu	4	no	yes	no	497	167	no	37	no
+							yes	no	yes	yes	4	97	27	77		volatile-lfu	7	no	no	no	485	155	no	17	no
+							no	yes	yes							allkeys-lfu	3	yes	yes	yes	681	61	yes	1	no
+							no	no	yes							volatile-random	6	yes	yes	no	632	166	yes	24	yes
+							yes	yes	yes	yes	17	93	22	70		allkeys-lru	3	yes	no	yes	730	55	yes	26	no
+							yes	yes	no							allkeys-lfu	7	no	yes	yes	609	137	no	9	yes
+							yes	no	yes	yes	2	95	24	82		volatile-lru	3	no	yes	no	287	230	no	16	no
+							yes	no	yes							volatile-ttl	7	yes	no	yes	317	174	yes	26	yes
+							no	no	no							allkeys-lru	7	no	yes	yes	691	81	no	7	yes
+							yes	yes	no	yes	5	81	23	76		volatile-lfu	7	no	no	no	307	114	no	9	no
+							yes	yes	yes	yes	9	76	17	80		volatile-lru	6	no	no	yes	256	182	yes	25	yes
+							no	no	no							volatile-random	4	no	yes	yes	390	141	no	3	no
+							yes	no	yes	yes	4	85	3	83		allkeys-random	6	no	no	no	501	34	yes	39	no
+							yes	yes	no	yes	19	75	17	73		allkeys-lfu	4	yes	no	no	642	185	no	23	no
+							no	yes	yes							allkeys-lru	5	no	yes	yes	317	190	yes	21	no
+							yes	no	no							volatile-lru	5	yes	no	yes	666	105	no	11	yes
+							yes	yes	no	yes	3	99	9	70		allkeys-lru	5	yes	yes	no	749	182	no	8	yes
+							no	no	no	yes	28	81	22	82		allkeys-random	4	yes	no	no	614	24	no	36	no
+							no	yes	yes							volatile-random	3	yes	yes	no	438	127	yes	1	no
+							no	yes	yes	yes	8	73	25	83		volatile-random	3	yes	yes	no	375	128	no	39	yes
+							no	yes	yes							volatile-lfu	5	no	no	yes	593	92	yes	29	no
+							yes	no	no	yes	28	85	28	85		allkeys-lru	3	no	no	no	637	137	no	1	yes
+							no	yes	no							noeviction	3	no	no	yes	379	103	no	31	no
+							no	no	no	yes	26	91	12	76		allkeys-lru	3	no	yes	no	719	237	yes	23	no
+							no	no	yes	yes	23	85	7	71		noeviction	3	yes	no	yes	358	27	no	23	no
+							no	no	yes	yes	10	75	21	90		allkeys-lfu	7	no	yes	yes	727	33	yes	5	no
+							yes	no	yes							volatile-lru	3	yes	no	no	539	251	no	21	no
+							no	yes	no	yes	27	84	8	85		allkeys-lfu	5	yes	no	no	651	105	no	34	no
+							yes	yes	no							noeviction	6	yes	yes	no	419	24	no	2	yes
+							yes	yes	no	yes	5	91	22	74		allkeys-lru	5	no	yes	yes	265	31	yes	33	no
+							yes	no	yes							volatile-lfu	4	no	no	no	296	69	no	12	yes
+							no	no	yes							volatile-ttl	6	yes	yes	yes	694	171	no	17	no
+							no	no	yes							volatile-lru	7	yes	yes	no	447	186	yes	26	no
+							yes	no	no							noeviction	6	no	no	no	506	163	no	7	no
+							yes	yes	yes	yes	19	82	11	87		allkeys-random	3	no	no	yes	446	203	no	15	no
+							no	no	yes							allkeys-lfu	6	no	no	no	656	116	yes	18	yes
+							no	yes	no	yes	10	79	13	83		allkeys-lfu	7	no	no	yes	553	170	no	3	yes
+							no	no	yes							volatile-lfu	4	no	yes	yes	672	146	yes	20	yes
+							no	no	no	yes	22	84	17	75		volatile-lru	3	no	yes	yes	459	109	no	30	no
+							yes	yes	no							allkeys-lfu	7	yes	no	yes	476	87	no	38	yes
+							yes	yes	yes							allkeys-lfu	7	no	no	no	703	58	yes	21	yes
+							no	yes	yes							allkeys-lfu	3	no	no	yes	544	41	yes	31	no
+							no	yes	no	yes	16	94	19	82		volatile-lru	5	no	yes	no	698	25	no	18	yes
+							no	no	yes	yes	5	76	6	90		allkeys-lru	5	no	yes	no	309	242	yes	3	no
+							no	no	yes	yes	29	79	12	80		allkeys-lru	3	no	no	no	607	37	no	10	yes
+							yes	yes	yes	yes	19	80	11	89		volatile-lru	4	no	no	yes	412	50	yes	11	yes
+							no	no	yes	yes	5	70	22	74		volatile-ttl	3	yes	no	yes	594	46	yes	15	yes
+							no	yes	no	yes	14	92	8	85		volatile-ttl	4	yes	no	yes	585	70	yes	37	no
+							yes	yes	yes	yes	1	79	8	84		volatile-lfu	5	no	yes	yes	570	78	no	31	no
+							yes	no	yes	yes	29	84	29	77		allkeys-lru	3	yes	yes	no	548	157	no	18	yes
+							yes	yes	no							allkeys-lfu	7	no	yes	yes	462	47	no	16	no
+							no	no	no							allkeys-lfu	7	no	yes	no	678	24	no	10	no
+							no	no	no	yes	5	72	16	78		allkeys-lfu	4	no	yes	yes	317	57	no	32	no
+							yes	yes	no							volatile-ttl	7	yes	no	yes	620	132	yes	34	yes
+							no	no	yes							allkeys-lru	4	yes	yes	no	663	168	yes	14	no
+							no	no	no							allkeys-lru	7	yes	no	yes	379	226	no	32	no
+							no	no	no							allkeys-lfu	6	yes	yes	yes	499	232	yes	30	no
+							yes	no	no	yes	18	92	30	88		volatile-lru	4	no	yes	yes	426	94	yes	7	no
+							yes	no	yes							volatile-lru	5	no	yes	no	260	242	yes	31	no
+							no	yes	yes	yes	8	71	28	77		allkeys-lru	6	no	no	no	273	232	yes	35	yes
+							yes	no	no	yes	15	74	20	77		allkeys-lru	4	no	yes	no	272	206	no	22	yes
+							yes	yes	no	yes	9	80	12	82		volatile-ttl	4	no	yes	no	683	26	yes	13	no
+							no	no	yes							volatile-ttl	6	yes	yes	yes	562	118	no	29	no
+							no	yes	no	yes	19	83	28	77		allkeys-random	5	no	yes	no	692	169	no	28	yes
+							no	yes	yes							allkeys-lfu	6	no	yes	no	537	94	no	32	yes
+							yes	no	yes							allkeys-random	7	yes	yes	no	517	57	yes	2	yes
+							yes	yes	yes	yes	15	73	18	83		volatile-ttl	5	no	no	yes	285	19	no	34	no
+							no	yes	yes	yes	30	86	14	90		volatile-ttl	4	no	yes	yes	738	244	yes	13	no
+							no	yes	yes	yes	8	77	14	74		allkeys-lru	4	no	yes	yes	609	143	no	32	yes
+							no	no	yes	yes	1	82	9	89		allkeys-lru	7	no	yes	yes	595	252	no	39	yes
+							yes	no	yes							noeviction	5	no	no	yes	281	165	no	36	no
+							no	yes	yes	yes	12	75	5	85		volatile-lfu	4	yes	yes	yes	473	115	no	38	no
+							yes	no	no							allkeys-lfu	5	yes	no	yes	405	53	yes	24	yes
+							no	yes	yes	yes	30	85	27	85		allkeys-random	5	no	no	yes	708	148	yes	37	no
+							yes	yes	no	yes	23	77	11	74		volatile-lru	5	no	no	no	473	213	no	31	yes
+							yes	no	yes	yes	12	89	24	75		volatile-lfu	4	yes	no	no	492	234	yes	34	no
+							no	no	yes							allkeys-lfu	5	yes	no	no	745	145	yes	16	yes
+							yes	yes	yes	yes	18	97	21	73		volatile-random	3	yes	no	no	400	122	no	15	no
+							no	no	yes	yes	28	94	21	79		allkeys-lru	6	yes	no	yes	578	209	no	24	yes
+							yes	no	yes							allkeys-lru	3	yes	no	no	517	142	no	12	yes
+							yes	yes	yes	yes	16	76	7	77		noeviction	3	yes	no	yes	611	27	no	26	no
+							yes	yes	yes	yes	15	85	3	83		volatile-random	3	no	no	no	379	223	no	25	yes
+							no	no	yes							volatile-random	5	no	no	no	608	241	no	37	yes
+							no	yes	no							volatile-lru	5	no	yes	yes	295	57	no	9	yes
+							yes	no	no	yes	9	81	14	74		noeviction	6	yes	no	no	272	195	yes	23	yes
+							no	yes	yes	yes	10	99	5	85		volatile-random	5	no	yes	yes	521	71	yes	18	yes
+							yes	yes	no							allkeys-lfu	7	no	no	no	618	183	no	33	yes
+							yes	yes	yes							volatile-ttl	7	no	yes	yes	541	35	yes	2	no
+							no	no	yes							volatile-random	7	no	yes	yes	424	163	no	30	yes
+							yes	no	no	yes	22	100	9	74		allkeys-lfu	3	yes	no	no	731	228	no	40	yes
+							yes	no	no	yes	22	94	29	78		volatile-lfu	3	no	yes	no	674	101	no	24	no
+							no	no	no	yes	17	91	17	75		allkeys-lru	5	no	no	yes	428	77	yes	31	no
+							no	yes	yes	yes	27	78	5	76		allkeys-lfu	3	no	yes	no	544	50	no	27	no
+							yes	no	no							allkeys-random	6	yes	yes	no	482	159	yes	29	yes
+							yes	no	yes	yes	30	95	8	74		allkeys-lru	3	yes	no	yes	318	92	yes	39	yes
+							no	yes	no	yes	23	90	11	76		volatile-lru	3	no	yes	yes	257	254	no	40	yes
+							yes	yes	no							allkeys-random	6	yes	no	yes	708	144	yes	16	yes
+							yes	yes	no							allkeys-lfu	6	yes	yes	yes	440	220	yes	39	yes
+							no	no	yes	yes	4	88	18	82		volatile-random	7	yes	no	no	269	31	yes	26	no
+							no	no	yes	yes	14	83	6	85		volatile-random	4	no	yes	yes	586	27	yes	23	no
+							no	yes	yes	yes	15	87	17	86		allkeys-random	3	no	no	no	443	150	yes	13	yes
+							yes	no	yes							volatile-lru	4	no	no	yes	475	234	no	22	yes
+							yes	no	no							allkeys-lru	4	no	no	yes	676	230	no	3	no
+							no	no	yes							volatile-lru	4	no	no	no	439	156	yes	9	yes
+							no	yes	yes	yes	4	70	6	81		volatile-random	4	no	yes	yes	373	70	yes	36	yes
+							yes	yes	no							allkeys-lfu	4	no	yes	yes	506	131	no	9	yes
+							yes	yes	yes							allkeys-lru	5	yes	yes	no	370	145	no	6	yes
+							yes	no	yes	yes	2	78	1	71		volatile-lru	5	no	no	no	674	55	no	26	yes
+							no	yes	no	yes	5	84	25	85		allkeys-random	6	no	yes	yes	448	20	yes	15	yes
+							yes	yes	no							volatile-random	7	yes	no	no	364	17	no	18	yes
+							no	yes	no							volatile-lfu	5	yes	yes	no	701	153	no	6	yes
+							yes	no	no							volatile-random	6	yes	no	yes	459	105	yes	31	no
+							yes	no	no	yes	3	79	28	78		allkeys-lfu	6	no	no	yes	324	192	no	8	no
+							no	yes	no							noeviction	4	yes	yes	yes	734	222	no	6	no
+							no	yes	no							noeviction	3	no	no	yes	701	207	no	11	yes
+							no	no	yes							volatile-lfu	4	yes	yes	yes	607	45	no	26	yes
+							yes	no	yes							volatile-lfu	5	yes	yes	yes	302	126	yes	29	yes
+							yes	yes	yes	yes	23	74	28	75		allkeys-random	7	no	yes	no	555	211	no	4	no
+							yes	yes	yes	yes	23	72	25	70		volatile-lfu	3	yes	yes	no	586	84	yes	38	yes
+							yes	no	yes	yes	26	90	21	86		allkeys-lru	7	no	no	yes	368	43	yes	25	yes
+							yes	no	no	yes	10	73	21	86		volatile-random	6	yes	yes	yes	264	116	no	12	yes
+							no	no	no	yes	21	79	7	89		allkeys-lfu	5	no	yes	yes	699	77	no	7	no
+							no	yes	no							volatile-random	5	no	yes	no	465	161	yes	18	no
+							yes	no	yes	yes	2	92	8	84		volatile-lfu	6	no	no	yes	388	100	no	34	yes
+							no	no	no	yes	26	94	21	83		volatile-ttl	3	yes	no	yes	356	187	no	26	no
+							no	no	no							allkeys-lru	4	no	no	no	650	196	no	32	no
+							yes	yes	yes	yes	21	79	21	75		volatile-ttl	5	no	no	no	330	232	yes	18	no
+							no	no	yes	yes	1	76	26	81		noeviction	4	yes	no	no	369	150	no	26	no
+							yes	no	yes	yes	28	73	7	71		volatile-ttl	4	no	no	no	736	157	no	17	no
+							no	no	no	yes	27	73	22	90		allkeys-lfu	5	no	yes	yes	565	195	no	1	yes
+							no	no	no	yes	22	75	8	81		noeviction	3	yes	no	yes	604	117	no	30	yes
+							yes	yes	no	yes	28	99	12	71		volatile-ttl	5	yes	no	no	657	144	no	30	no
+							yes	no	yes							allkeys-random	4	yes	yes	yes	530	198	no	25	yes
+							no	no	yes							volatile-ttl	3	yes	yes	no	563	18	yes	12	yes
+							yes	no	yes	yes	12	70	27	87		noeviction	7	yes	yes	yes	280	133	no	16	no
+							no	yes	yes							noeviction	7	no	yes	yes	446	64	yes	38	yes
+							no	no	no							volatile-lru	3	no	yes	yes	632	197	yes	18	no
+							no	yes	yes							allkeys-lfu	5	no	yes	no	671	144	no	13	no
+							no	yes	yes							allkeys-lfu	3	no	no	no	483	123	yes	3	no
+							yes	no	no	yes	14	94	16	74		volatile-lru	7	no	no	no	554	55	no	3	no
+							no	yes	yes	yes	16	71	2	72		allkeys-lfu	4	yes	no	no	332	45	yes	31	no
+							no	no	yes	yes	23	91	30	80		volatile-lfu	3	no	no	yes	263	197	yes	19	yes
+							no	yes	yes	yes	17	80	20	89		volatile-lru	6	no	no	no	524	169	yes	29	no
+							yes	yes	yes							allkeys-lfu	5	no	yes	yes	616	128	yes	14	yes
+							no	yes	no	yes	20	84	3	85		volatile-ttl	4	yes	yes	yes	672	85	yes	26	yes
+							yes	yes	no	yes	7	96	13	84		allkeys-lfu	5	no	yes	no	619	129	no	36	no
+							yes	yes	no	yes	23	96	13	83		volatile-lfu	4	no	no	yes	396	76	no	15	yes
+							no	no	yes	yes	23	94	19	73		allkeys-random	5	no	no	no	613	62	yes	13	yes
+							no	no	yes							volatile-lfu	7	no	no	no	373	37	yes	33	yes
+							yes	yes	no							volatile-ttl	3	no	no	no	472	239	yes	23	yes
+							no	yes	no							allkeys-random	5	no	no	yes	310	162	yes	6	yes
+							no	yes	no	yes	13	83	24	85		allkeys-lfu	4	yes	yes	no	675	197	no	10	no
+							no	yes	yes	yes	8	77	15	78		noeviction	6	yes	no	no	721	36	yes	18	no
+							no	no	yes	yes	30	95	6	77		noeviction	6	yes	yes	yes	442	249	no	30	no
+							no	yes	yes							volatile-ttl	7	yes	yes	yes	694	32	no	27	yes
+							yes	yes	yes	yes	18	81	2	84		volatile-random	6	no	yes	yes	636	216	yes	39	no
+							no	no	yes							allkeys-lfu	3	yes	no	yes	471	104	no	38	yes
+							no	yes	no							noeviction	3	yes	no	yes	257	152	no	31	yes
+							yes	no	yes	yes	19	100	28	78		allkeys-lru	6	no	yes	no	259	26	no	7	no
+							yes	no	no	yes	8	83	15	74		allkeys-random	6	no	yes	yes	380	33	yes	4	yes
+							no	no	yes							volatile-ttl	3	no	no	no	656	43	no	24	no
+							yes	yes	no	yes	10	100	7	82		allkeys-random	4	no	no	yes	542	142	no	7	no
+							no	yes	no							allkeys-lru	7	no	no	yes	372	237	no	19	yes
+							yes	yes	yes	yes	30	98	13	80		allkeys-lfu	5	yes	yes	no	365	204	yes	4	yes
+							yes	yes	no	yes	17	72	10	85		noeviction	7	no	no	yes	375	241	yes	13	yes
+							no	yes	no	yes	13	90	16	88		volatile-ttl	6	yes	yes	yes	311	232	no	14	no
+							no	yes	no							volatile-ttl	6	yes	no	no	497	153	yes	13	yes
+							yes	no	no	yes	17	74	8	80		allkeys-lru	7	yes	no	no	653	249	no	24	yes
+							no	yes	yes	yes	25	90	30	89		allkeys-lfu	5	yes	no	yes	622	240	yes	34	yes
+							no	yes	yes	yes	9	87	4	70		volatile-lfu	7	yes	no	no	357	34	no	5	no
+							no	yes	yes							volatile-lru	3	no	no	no	324	45	no	38	yes
+							no	no	yes	yes	14	90	27	80		volatile-random	6	yes	yes	no	358	167	no	13	no
+							yes	yes	yes	yes	17	100	8	89		volatile-lfu	3	no	no	yes	677	203	yes	31	yes
+							yes	no	yes							volatile-random	6	yes	yes	yes	424	251	no	36	yes
+							yes	yes	yes							volatile-lru	6	no	no	yes	321	97	yes	23	no
+							no	yes	yes							noeviction	4	yes	no	yes	722	98	no	17	yes
+							yes	no	no	yes	27	92	17	78		volatile-ttl	4	yes	yes	no	643	122	no	21	yes
+							no	yes	no							volatile-lru	6	no	yes	yes	277	246	no	20	no
+							yes	yes	no							allkeys-lfu	5	no	yes	yes	615	233	yes	6	yes
+							yes	no	no	yes	21	86	3	70		allkeys-random	4	no	no	yes	259	41	yes	2	no
+							yes	no	no							volatile-lru	4	yes	yes	yes	364	128	yes	36	no
+							no	yes	yes	yes	3	70	4	79		volatile-lru	5	no	yes	yes	323	250	no	1	no
+							no	no	no							allkeys-lru	7	no	no	no	676	96	no	35	yes
+							no	yes	no	yes	29	74	6	74		noeviction	5	no	no	no	544	107	yes	9	no
+							yes	no	yes	yes	17	99	4	78		volatile-lru	3	yes	no	yes	272	45	yes	35	no
+							no	no	no							allkeys-lru	7	yes	no	no	341	229	yes	6	yes
+							yes	yes	no	yes	28	86	27	79		volatile-ttl	4	no	no	no	631	219	no	3	yes
+							no	no	no	yes	1	77	16	71		allkeys-random	6	yes	no	yes	672	98	yes	20	yes
+							yes	yes	no	yes	29	71	1	75		volatile-random	3	no	yes	no	293	81	no	9	no
+							yes	no	no	yes	12	88	21	78		allkeys-random	7	no	no	yes	540	149	yes	34	no
+							yes	no	yes							volatile-lru	4	no	yes	no	733	112	yes	9	yes
+							yes	no	no	yes	8	74	16	86		volatile-ttl	6	yes	yes	no	720	30	no	32	yes
+							yes	yes	no	yes	14	100	30	89		allkeys-lru	4	no	no	no	608	106	yes	33	no
+							no	no	yes	yes	4	81	11	80		volatile-lru	7	no	no	no	514	153	yes	6	no
+							yes	no	no	yes	3	94	4	81		volatile-random	4	yes	yes	no	661	56	no	17	yes
+							no	yes	no							volatile-lfu	3	no	yes	yes	643	72	yes	15	no
+							no	yes	yes	yes	8	74	23	90		volatile-ttl	3	no	yes	no	553	238	no	28	yes
+							no	yes	yes	yes	16	86	9	73		volatile-ttl	6	no	no	yes	373	201	yes	16	yes
+							yes	no	yes	yes	23	92	14	79		volatile-random	3	yes	no	no	274	142	yes	36	yes
+							no	yes	yes							volatile-lfu	7	no	yes	no	559	114	yes	12	no
+							no	no	yes	yes	17	95	21	70		volatile-lfu	6	no	no	no	704	172	no	37	no
+							yes	no	no	yes	26	86	26	75		volatile-random	7	no	yes	yes	653	220	no	17	no
+							no	no	yes	yes	17	90	26	77		allkeys-lfu	6	no	no	yes	671	128	yes	38	yes
+							yes	yes	no							allkeys-lru	3	no	yes	no	700	107	yes	25	no
+							yes	no	yes							allkeys-random	3	yes	no	no	436	171	no	33	yes
+							yes	no	yes							volatile-random	4	yes	yes	no	509	168	no	18	yes
+							yes	no	yes							allkeys-lfu	5	no	yes	yes	516	170	yes	39	no
+							yes	no	no	yes	26	95	5	84		allkeys-lfu	3	no	no	yes	500	210	no	12	yes
+							yes	yes	yes	yes	25	74	19	74		noeviction	4	no	no	yes	591	35	yes	29	yes
+							yes	yes	no							allkeys-random	7	yes	yes	yes	352	188	yes	29	no
+							no	yes	no							volatile-random	5	no	no	no	337	114	no	16	no
+							yes	no	no							allkeys-lfu	3	no	yes	yes	408	141	no	21	yes
+							yes	yes	no	yes	3	88	5	80		volatile-random	3	no	yes	yes	374	63	no	8	yes
+							no	no	yes	yes	16	74	10	83		volatile-lfu	4	yes	yes	no	342	45	yes	29	yes
+							no	no	no	yes	24	100	24	71		volatile-random	7	no	yes	no	714	90	no	35	yes
+							no	yes	no							volatile-lfu	7	yes	no	yes	326	47	no	33	no
+							no	no	yes	yes	3	75	12	86		allkeys-random	5	no	yes	yes	366	52	yes	29	no
+							yes	yes	no							volatile-ttl	3	no	no	yes	705	211	yes	10	no
+							yes	no	yes	yes	14	79	13	85		volatile-lfu	5	yes	yes	no	420	234	no	9	yes
+							no	no	yes	yes	30	73	12	90		allkeys-lfu	7	no	no	yes	260	67	yes	11	yes
+							yes	yes	no							volatile-lru	5	yes	no	no	265	225	yes	38	no
+							no	no	yes							volatile-lru	6	no	yes	yes	389	249	yes	10	no
+							yes	no	yes	yes	1	74	24	82		allkeys-lru	4	yes	yes	yes	586	210	yes	34	yes
+							no	yes	yes							allkeys-lfu	7	yes	yes	yes	575	136	yes	36	no
+							yes	no	no	yes	12	83	6	75		allkeys-lfu	5	no	no	no	258	185	no	10	yes
+							no	yes	no							volatile-random	4	no	yes	no	553	184	no	13	no
+							yes	no	yes							allkeys-lfu	6	no	no	no	448	45	yes	7	no
+							yes	no	yes	yes	29	91	8	80		volatile-ttl	4	yes	no	yes	504	252	yes	25	yes
+							yes	yes	no	yes	20	88	6	85		allkeys-lfu	3	yes	yes	no	283	201	no	8	yes
+							yes	no	no	yes	23	87	4	79		noeviction	3	yes	no	no	302	30	yes	30	no
+							no	yes	no							volatile-lfu	3	no	yes	no	544	188	yes	2	no
+							yes	no	yes	yes	23	73	6	80		volatile-ttl	7	yes	yes	no	653	221	yes	33	yes
+							no	yes	no	yes	21	85	25	73		volatile-lru	7	yes	yes	yes	434	32	yes	40	yes
+							no	no	yes							volatile-lfu	5	yes	yes	yes	618	58	yes	6	no
+							yes	yes	yes	yes	6	91	1	88		noeviction	3	yes	no	no	572	192	no	26	yes
+							no	no	yes	yes	26	80	26	83		allkeys-lru	3	no	yes	yes	386	170	yes	37	yes
+							yes	yes	yes							volatile-random	3	yes	no	no	696	22	yes	11	yes
+							no	yes	yes							noeviction	5	no	yes	yes	602	77	yes	12	no
+							no	no	yes	yes	2	83	6	70		volatile-ttl	6	yes	no	yes	373	51	yes	8	yes
+							yes	yes	yes	yes	20	73	6	77		volatile-lfu	7	no	yes	yes	586	62	no	38	yes
+							yes	yes	yes							noeviction	5	yes	no	no	309	160	no	28	yes
+							yes	yes	no	yes	14	73	9	76		allkeys-lru	3	no	yes	yes	301	206	yes	36	no
+							no	no	yes	yes	19	73	28	74		allkeys-lru	4	no	no	no	421	232	no	4	yes
+							no	no	no							volatile-lru	4	yes	no	yes	645	201	yes	15	no
+							no	no	no	yes	23	85	4	74		volatile-ttl	6	yes	yes	yes	664	19	no	12	yes
+							no	yes	yes							volatile-lru	3	no	no	yes	485	24	no	3	no
+							no	yes	no							allkeys-lru	7	yes	no	no	516	218	no	32	yes
+							yes	no	yes	yes	14	91	25	80		noeviction	6	no	yes	yes	662	145	no	37	no
+							yes	no	no							allkeys-lru	3	yes	yes	no	705	28	no	32	yes
+							yes	yes	yes	yes	1	81	13	81		noeviction	7	no	no	yes	544	168	no	5	yes
+							yes	yes	yes							volatile-ttl	7	no	no	no	330	115	no	13	no
+							yes	yes	yes							volatile-lfu	3	yes	no	yes	561	30	no	7	yes
+							yes	no	no							allkeys-lru	3	no	yes	no	310	117	no	22	no
+							yes	yes	yes							volatile-lfu	5	yes	no	yes	379	183	no	20	yes
+							no	yes	yes	yes	18	96	19	75		allkeys-random	6	no	no	yes	581	108	yes	40	no
+							yes	no	yes	yes	24	99	9	88		volatile-lfu	7	no	yes	no	704	33	yes	37	yes
+							yes	no	no	yes	16	93	8	82		volatile-lfu	3	yes	no	yes	383	53	yes	24	yes
+							yes	no	yes	yes	7	73	2	71		volatile-random	3	no	no	no	354	167	yes	32	yes
+							yes	no	no							noeviction	4	no	no	yes	538	187	no	18	yes
+							no	no	no	yes	4	82	15	89		allkeys-lru	4	yes	yes	yes	674	137	yes	20	no
+							no	yes	yes	yes	11	83	16	71		allkeys-lfu	5	yes	no	no	531	52	yes	22	no
+							no	yes	no							volatile-lfu	7	yes	no	yes	319	178	yes	21	yes
+							no	no	yes	yes	4	76	5	82		volatile-ttl	4	no	no	yes	569	159	yes	29	yes
+							no	yes	no							volatile-lru	6	yes	no	yes	683	211	no	25	no
+							no	yes	no							allkeys-lfu	6	yes	yes	no	635	227	no	32	yes
+							yes	yes	yes	yes	5	94	16	89		allkeys-random	6	yes	no	yes	268	174	no	15	yes
+							yes	yes	no	yes	16	96	25	79		allkeys-lru	4	yes	yes	no	330	126	yes	2	no
+							no	no	no	yes	21	94	11	82		volatile-ttl	7	yes	yes	yes	647	231	yes	27	no
+							no	no	no							volatile-lru	4	yes	yes	yes	380	60	yes	34	yes
+							yes	no	no							allkeys-lru	7	no	yes	yes	506	223	yes	9	no
+							no	yes	yes							volatile-random	7	yes	no	no	292	225	no	24	yes
+							no	no	yes	yes	21	93	5	76		volatile-random	3	yes	no	yes	315	196	no	22	yes
+							yes	yes	no							allkeys-lru	3	yes	no	no	550	214	no	35	no
+							no	yes	no	yes	15	99	5	80		volatile-lfu	7	no	yes	no	717	197	yes	2	no
+							yes	yes	yes	yes	24	73	4	79		noeviction	4	yes	yes	yes	628	133	no	1	no
+							yes	yes	no	yes	13	82	9	70		volatile-random	5	no	yes	no	341	219	yes	16	yes
+							yes	yes	yes							allkeys-lru	5	no	no	no	521	204	no	19	yes
+							no	no	yes	yes	6	75	27	86		noeviction	4	no	yes	yes	369	27	no	35	yes
+							no	no	no							volatile-random	4	yes	no	yes	386	91	no	22	no
+							yes	yes	yes							allkeys-lru	7	no	no	yes	481	28	no	35	yes
+							no	no	no							allkeys-random	7	yes	yes	no	704	36	yes	26	no
+							no	yes	no							volatile-lfu	6	no	no	yes	483	73	yes	14	yes
+							yes	yes	yes	yes	2	76	7	74		allkeys-lru	5	yes	no	no	437	103	no	33	no
+							yes	yes	no							volatile-ttl	5	yes	yes	yes	293	230	yes	31	no
+							yes	no	yes	yes	25	77	3	71		allkeys-lru	7	yes	yes	yes	513	109	yes	12	yes
+							yes	no	yes	yes	1	97	19	78		volatile-random	3	no	yes	no	358	36	no	6	no
+							no	yes	yes							allkeys-lfu	6	yes	yes	no	624	127	yes	8	no
+							yes	yes	no							volatile-lru	7	no	no	yes	459	59	yes	16	yes
+							yes	no	no	yes	6	100	11	90		volatile-ttl	4	no	yes	yes	354	18	yes	15	no
+							yes	yes	no							allkeys-lfu	5	yes	yes	yes	727	201	yes	16	yes
+							no	yes	no	yes	3	98	12	83		volatile-lfu	5	yes	no	no	549	123	yes	29	no
+							yes	yes	yes							volatile-ttl	7	no	yes	yes	354	216	yes	6	yes
+							no	no	no	yes	3	78	1	84		allkeys-random	4	no	yes	no	535	24	no	25	no
+							no	no	yes							allkeys-random	3	yes	yes	yes	667	191	yes	12	no
+							no	yes	yes							noeviction	6	no	yes	yes	360	41	yes	21	yes
+							no	yes	no							allkeys-lru	4	no	no	no	649	58	no	8	no
+							no	no	no							volatile-random	4	yes	yes	yes	463	193	no	28	yes
+							yes	yes	no	yes	18	81	20	76		volatile-random	3	yes	no	no	383	190	yes	35	yes
+							yes	no	yes	yes	17	73	12	87		noeviction	3	yes	yes	yes	701	163	yes	31	yes
+							no	no	yes							volatile-lru	3	no	no	no	497	180	yes	17	no
+							yes	yes	no							allkeys-lfu	7	no	yes	no	691	98	yes	6	no
+							no	yes	yes	yes	7	100	25	82		volatile-lfu	5	yes	yes	no	534	209	yes	2	no
+							no	yes	no	yes	23	87	8	74		allkeys-lru	4	yes	no	no	297	45	no	26	no
+							yes	no	no	yes	11	100	5	83		volatile-random	7	yes	no	yes	607	129	yes	1	no
+							no	yes	no							noeviction	7	yes	no	no	373	125	yes	32	yes
+							no	no	yes	yes	13	70	13	78		volatile-lru	7	yes	no	yes	468	109	no	6	yes
+							yes	yes	no	yes	21	85	22	73		volatile-ttl	7	no	yes	no	309	106	no	18	no
+							yes	yes	yes							volatile-ttl	3	yes	yes	no	401	241	yes	31	yes
+							yes	no	no	yes	16	98	3	73		volatile-random	4	no	yes	yes	708	175	no	6	no
+							no	yes	no	yes	19	92	30	86		allkeys-lfu	6	yes	no	no	500	194	yes	38	no
+							yes	no	yes	yes	20	98	27	74		volatile-ttl	3	no	no	yes	575	177	yes	27	yes
+							yes	no	yes							volatile-lfu	5	no	yes	no	740	246	no	25	no
+							yes	yes	yes	yes	22	81	21	71		volatile-random	7	yes	yes	no	550	104	no	2	yes
+							no	yes	yes	yes	27	73	30	73		volatile-lfu	3	no	no	no	722	231	no	13	yes
+							yes	yes	yes	yes	7	98	7	80		allkeys-random	4	yes	no	yes	516	111	no	19	yes
+							yes	yes	no	yes	16	99	12	80		allkeys-lfu	3	yes	yes	yes	453	67	no	36	no
+							no	yes	no							volatile-lru	6	yes	yes	no	305	166	no	12	yes
+							no	no	no	yes	13	86	6	79		volatile-lru	4	yes	yes	no	404	241	yes	34	yes
+							yes	yes	no	yes	2	81	11	89		allkeys-lfu	3	yes	no	yes	256	219	yes	22	yes
+							yes	yes	yes							allkeys-lru	6	yes	yes	yes	288	33	no	32	no
+							yes	no	yes							allkeys-random	3	no	yes	no	349	63	yes	36	no
+							no	no	yes							allkeys-lfu	3	no	no	yes	729	37	no	7	no
+							no	yes	yes							allkeys-lfu	6	yes	no	yes	484	145	yes	35	yes
+							yes	yes	yes	yes	25	98	15	83		volatile-lfu	6	yes	yes	no	288	150	yes	40	yes
+							no	no	no							volatile-ttl	4	yes	no	no	685	112	yes	24	no
+							yes	no	yes							volatile-lfu	6	yes	yes	yes	674	42	yes	5	yes
+							yes	no	yes	yes	25	91	6	88		volatile-lru	7	yes	yes	yes	351	255	yes	4	no
+							no	yes	no							allkeys-random	6	yes	yes	no	438	110	no	37	yes
+							yes	yes	no							volatile-lru	7	yes	no	yes	410	108	no	33	yes
+							yes	yes	no							volatile-lru	4	no	no	no	513	137	yes	19	yes
+							yes	yes	no							volatile-random	5	no	no	yes	423	186	yes	14	no
+							yes	yes	yes							volatile-lfu	7	yes	no	no	616	140	no	36	yes
+							no	no	no							volatile-ttl	4	no	yes	yes	608	27	yes	24	no
+							yes	yes	no							noeviction	7	no	no	yes	625	102	no	12	yes
+							no	yes	yes							volatile-random	3	no	no	no	640	230	yes	18	yes
+							no	yes	no	yes	2	99	2	77		allkeys-random	5	yes	yes	no	738	184	no	22	no
+							no	no	yes							volatile-ttl	3	yes	yes	no	732	132	no	10	yes
+							yes	yes	yes							volatile-random	5	no	no	yes	750	180	yes	38	yes
+							no	yes	yes	yes	28	78	11	74		volatile-lfu	6	no	yes	yes	576	103	no	14	no
+							no	yes	no							volatile-ttl	3	yes	yes	no	708	225	no	31	yes
+							no	no	no							volatile-lfu	7	no	no	yes	275	35	no	23	no
+							no	yes	yes	yes	13	92	10	79		allkeys-lfu	3	yes	no	yes	364	67	yes	31	yes
+							no	no	no	yes	1	70	2	74		volatile-lfu	5	no	yes	yes	353	77	yes	33	no
+							yes	yes	no							allkeys-lfu	5	yes	yes	no	333	247	yes	40	no
+							no	no	yes							volatile-lru	3	no	no	yes	570	152	no	10	yes
+							no	no	yes							noeviction	6	no	yes	no	308	123	yes	23	no
+							yes	yes	no	yes	27	73	9	83		volatile-lru	6	yes	no	no	610	51	yes	9	yes
+							no	no	yes	yes	30	87	18	73		allkeys-lfu	6	yes	no	no	329	171	no	21	no
+							yes	no	no							allkeys-lru	5	yes	no	no	706	18	yes	26	no
+							no	yes	yes	yes	14	92	23	70		allkeys-lru	3	yes	no	no	665	72	yes	23	yes
+							yes	no	no							volatile-lfu	6	yes	no	no	642	189	yes	14	yes
+							no	yes	yes							allkeys-random	5	no	yes	yes	539	130	yes	35	yes
+							yes	no	yes	yes	16	98	5	88		allkeys-lfu	4	yes	yes	no	324	120	yes	36	no
+							yes	yes	yes	yes	22	71	13	82		noeviction	4	no	yes	yes	326	236	no	32	yes
+							no	yes	no							volatile-lfu	4	yes	no	yes	643	230	no	31	no
+							no	no	no							volatile-ttl	3	no	yes	yes	350	174	yes	4	yes
+							no	no	no							volatile-ttl	6	no	no	yes	714	118	yes	2	no
+							yes	yes	yes							volatile-ttl	5	yes	no	yes	465	175	yes	10	no
+							no	no	yes							noeviction	6	no	no	no	649	23	yes	27	yes
+							no	yes	yes	yes	11	82	8	86		allkeys-lfu	3	yes	no	yes	605	143	yes	11	no
+							no	yes	no							volatile-random	3	no	yes	yes	291	138	yes	21	yes
+							yes	no	yes	yes	6	89	28	74		volatile-lfu	4	no	yes	yes	622	255	no	3	yes
+							yes	yes	yes	yes	2	75	14	76		volatile-lru	7	no	yes	yes	466	127	yes	11	no
+							yes	yes	yes	yes	14	86	7	70		volatile-ttl	3	yes	no	yes	401	151	yes	1	yes
+							no	yes	yes	yes	20	96	6	75		allkeys-random	5	yes	yes	no	354	59	yes	35	no
+							yes	yes	no	yes	18	96	16	77		volatile-lfu	3	no	yes	yes	499	194	yes	25	no
+							yes	yes	yes	yes	2	77	26	77		noeviction	3	no	no	yes	479	29	no	10	no
+							yes	no	no							volatile-random	4	no	no	no	357	23	yes	14	yes
+							yes	yes	yes							noeviction	3	yes	yes	no	517	240	no	40	yes
+							no	yes	yes							allkeys-random	4	no	no	yes	420	190	yes	13	no
+							no	yes	no	yes	20	94	8	89		noeviction	3	yes	no	yes	547	83	yes	22	no
+							yes	yes	yes	yes	22	91	17	76		allkeys-lru	3	yes	yes	yes	361	94	yes	5	no
+							yes	yes	no							allkeys-lru	4	no	no	yes	542	254	yes	40	yes
+							no	no	no							allkeys-lfu	4	no	no	yes	473	150	yes	14	yes
+							yes	no	yes	yes	1	82	9	70		volatile-lfu	3	no	yes	yes	682	187	no	3	yes
+							no	no	yes	yes	22	70	22	78		allkeys-random	3	yes	no	no	656	241	no	24	no
+							yes	no	no	yes	18	93	21	74		volatile-lru	7	yes	no	yes	308	199	yes	23	yes
+							no	no	no	yes	20	86	7	83		allkeys-lru	7	yes	no	yes	294	207	no	10	yes
+							no	no	yes	yes	16	95	26	70		allkeys-lfu	7	yes	yes	yes	509	81	yes	20	no
+							no	yes	no	yes	17	100	18	79		volatile-ttl	5	no	yes	yes	313	22	no	23	yes
+							yes	yes	yes							noeviction	4	no	no	no	597	164	no	37	no
+							no	yes	no	yes	25	95	9	78		noeviction	3	yes	no	yes	297	100	no	14	yes
+							no	yes	yes	yes	19	81	16	84		allkeys-random	7	yes	yes	no	434	225	no	17	yes
+							no	yes	yes	yes	7	85	3	85		noeviction	5	no	yes	yes	495	39	yes	29	yes
+							yes	yes	no							volatile-lfu	3	yes	no	no	644	119	yes	2	no
+							no	yes	no							volatile-ttl	4	no	no	no	400	206	no	40	no
+							yes	no	no	yes	24	77	22	71		volatile-ttl	5	yes	no	yes	737	139	no	37	yes
+							yes	yes	no							allkeys-lfu	4	yes	yes	no	360	18	yes	7	no
+							yes	no	no							allkeys-random	7	yes	no	yes	722	200	no	40	no
+							yes	no	no							allkeys-lru	5	yes	yes	no	515	53	yes	26	no
+							no	yes	no							noeviction	3	no	no	yes	311	123	no	2	no
+							no	yes	no							volatile-ttl	3	no	no	no	288	220	yes	12	yes
+							no	yes	no	yes	28	94	5	88		allkeys-lru	3	no	no	no	547	106	no	35	yes
+							no	no	no	yes	11	97	20	73		allkeys-lru	5	yes	no	yes	524	135	no	18	no
+							no	no	no							volatile-lru	4	no	yes	yes	284	25	no	35	no
+							no	yes	yes	yes	10	87	10	75		volatile-ttl	5	yes	yes	no	598	111	yes	21	yes
+							no	no	yes	yes	19	76	17	74		allkeys-lru	7	no	no	yes	271	153	no	12	yes
+							no	no	no							noeviction	6	yes	no	yes	282	209	yes	11	no
+							no	no	no							volatile-lru	6	yes	no	no	356	136	yes	12	no
+							no	no	no							allkeys-lru	4	no	yes	yes	591	75	yes	35	no
+							yes	yes	no	yes	21	93	4	78		allkeys-lru	3	yes	yes	yes	567	211	yes	24	no
+							yes	yes	no							volatile-lru	4	no	yes	yes	605	30	yes	27	yes
+							no	yes	yes							volatile-lru	6	yes	yes	no	259	41	no	26	no
+							no	no	no	yes	19	77	27	88		noeviction	3	yes	no	no	579	124	yes	22	yes
+							yes	yes	yes							volatile-random	3	no	no	no	750	90	yes	26	no
+							no	yes	yes	yes	11	94	18	85		allkeys-lru	4	no	no	yes	276	254	no	40	no
+							yes	yes	yes	yes	5	78	7	90		noeviction	3	no	no	yes	325	49	yes	2	yes
+							yes	no	no							allkeys-lru	7	yes	yes	no	430	165	no	31	no
+							yes	yes	yes	yes	7	81	13	78		allkeys-lru	6	yes	no	yes	256	195	no	18	yes
+							yes	yes	no							noeviction	5	no	yes	yes	600	89	no	21	no
+							yes	yes	yes	yes	23	82	24	88		volatile-ttl	3	no	yes	no	256	223	no	3	no
+							yes	no	yes							allkeys-random	7	no	yes	yes	638	209	no	32	no
+							yes	no	no	yes	17	86	16	84		volatile-random	7	no	no	no	540	93	no	2	no
+							yes	yes	yes							volatile-random	4	yes	no	no	616	138	yes	6	no
+							no	yes	no	yes	28	75	20	74		volatile-lru	7	no	yes	no	566	203	yes	2	yes
+							no	no	no							allkeys-lfu	5	yes	yes	no	660	84	yes	1	yes
+							no	no	no	yes	17	99	4	75		volatile-ttl	5	yes	yes	no	470	120	no	21	yes
+							no	yes	yes	yes	29	89	14	78		noeviction	4	yes	no	yes	396	229	yes	17	no
+							yes	no	no							volatile-ttl	6	no	yes	no	332	104	yes	11	no
+							no	no	yes	yes	28	89	4	89		allkeys-random	4	yes	yes	no	443	226	yes	13	no
+							no	yes	no	yes	22	98	18	82		allkeys-lfu	4	no	yes	no	738	166	yes	33	no
+							yes	yes	no							allkeys-lru	6	yes	no	no	638	142	no	1	no
+							no	yes	yes							allkeys-lru	6	yes	yes	no	472	197	yes	39	yes
+							yes	no	no	yes	15	73	27	80		allkeys-lfu	6	yes	yes	no	587	154	yes	17	no
+							yes	yes	no							allkeys-lru	4	yes	no	no	489	246	yes	40	no
+							no	no	no							volatile-lfu	3	no	no	no	529	182	no	27	yes
+							yes	no	no	yes	28	88	24	90		volatile-ttl	7	yes	yes	no	650	233	no	24	no
+							yes	yes	yes							volatile-random	7	yes	no	yes	470	70	yes	15	no
+							no	yes	yes	yes	17	86	9	90		volatile-random	5	yes	no	no	586	34	yes	17	yes
+							no	no	no	yes	13	73	20	72		allkeys-random	7	yes	yes	no	506	210	yes	8	yes
+							no	yes	no	yes	5	86	23	76		allkeys-lfu	6	no	no	no	384	50	no	16	yes
+							no	no	yes	yes	18	93	26	79		noeviction	6	no	no	yes	447	44	no	11	no
+							yes	yes	yes							allkeys-lfu	3	yes	no	no	543	36	yes	7	no
+							yes	yes	no							noeviction	7	yes	yes	yes	443	234	yes	6	yes
+							yes	yes	yes	yes	13	71	11	87		allkeys-lfu	5	no	no	yes	320	162	no	20	no
+							no	yes	no	yes	17	88	10	78		allkeys-lru	3	yes	yes	yes	565	67	yes	28	no
+							yes	yes	no	yes	26	72	27	70		allkeys-lru	5	yes	no	yes	694	60	no	30	yes
+							no	no	yes							allkeys-lfu	6	yes	no	no	577	29	no	37	yes
+							yes	no	yes	yes	23	98	15	79		volatile-lfu	3	no	yes	yes	742	70	no	22	no
+							yes	no	yes							volatile-ttl	4	no	yes	no	497	132	yes	3	yes
+							no	no	yes	yes	24	70	20	78		allkeys-lfu	7	yes	no	yes	388	214	yes	12	no
+							yes	yes	yes							volatile-ttl	5	no	no	yes	325	214	yes	35	yes
+							no	no	no							volatile-ttl	3	yes	yes	no	392	255	yes	4	yes
+							yes	no	yes	yes	21	70	9	77		allkeys-lfu	3	yes	no	no	346	123	no	27	no
+							no	no	no	yes	2	100	5	75		allkeys-random	7	no	yes	no	611	103	yes	8	yes
+							no	no	no	yes	20	88	23	81		volatile-lfu	3	no	no	no	626	249	no	11	no
+							no	yes	yes							noeviction	6	yes	yes	no	312	39	yes	5	no
+							no	no	no	yes	28	95	4	81		allkeys-lru	6	no	no	no	539	203	yes	13	yes
+							yes	yes	yes	yes	12	70	4	89		noeviction	5	no	no	no	322	68	yes	9	yes
+							no	no	yes	yes	24	85	10	70		volatile-random	3	yes	yes	no	652	92	no	6	yes
+							yes	no	no	yes	11	75	21	82		volatile-random	6	no	yes	yes	526	40	yes	36	no
+							no	no	yes							noeviction	7	no	no	yes	582	180	no	31	yes
+							yes	no	yes	yes	10	76	9	76		allkeys-random	6	yes	yes	no	686	216	yes	33	yes
+							yes	yes	no							volatile-ttl	3	yes	no	no	616	170	yes	7	no
+							no	yes	no	yes	25	74	18	73		allkeys-lru	5	no	yes	no	706	59	no	16	yes
+							yes	no	no	yes	3	72	5	82		volatile-lru	4	no	yes	no	668	92	yes	23	no
+							no	yes	no	yes	23	90	17	84		allkeys-lru	7	no	yes	no	382	92	yes	35	no
+							no	yes	no							volatile-random	7	no	no	no	478	31	no	23	no
+							yes	yes	yes							volatile-random	5	no	no	no	564	235	no	30	no
+							yes	no	yes							allkeys-lru	7	yes	no	yes	697	176	no	10	no
+							yes	yes	yes							allkeys-random	4	no	no	yes	364	108	yes	9	no
+							yes	yes	no							allkeys-lru	7	yes	yes	no	336	60	yes	40	no
+							yes	no	no	yes	25	87	7	75		volatile-lru	6	no	yes	no	489	45	no	29	no
+							no	yes	yes							volatile-lfu	7	no	yes	no	577	248	no	1	no
+							yes	no	yes	yes	16	72	29	72		volatile-lru	5	no	no	yes	638	65	yes	40	no
+							no	no	no	yes	10	94	12	80		volatile-lru	7	yes	no	yes	382	135	no	6	yes
+							yes	no	no							allkeys-lru	3	no	yes	no	720	113	yes	27	no
+							yes	yes	yes	yes	25	74	19	86		allkeys-random	4	yes	yes	no	613	146	yes	3	yes
+							no	yes	yes	yes	10	75	28	89		allkeys-lru	7	yes	no	no	274	45	yes	6	no
+							no	yes	no	yes	28	77	14	79		volatile-random	4	yes	yes	no	259	135	yes	35	yes
+							yes	yes	no	yes	3	97	28	88		allkeys-lfu	6	yes	yes	yes	477	57	yes	25	yes
+							yes	no	yes	yes	7	84	22	74		volatile-ttl	7	no	no	no	528	53	no	16	no
+							no	no	no	yes	27	88	4	78		volatile-lru	6	no	yes	yes	519	220	yes	16	yes
+							yes	no	no							allkeys-lfu	4	no	no	no	365	159	yes	12	no
+							no	yes	yes	yes	18	82	16	74		allkeys-random	5	yes	no	no	611	199	yes	27	yes
+							no	no	yes	yes	25	70	13	85		volatile-lfu	3	no	no	no	595	99	no	27	no
+							yes	yes	yes	yes	13	92	7	84		allkeys-lru	7	yes	no	yes	457	49	yes	24	yes
+							no	no	yes							noeviction	5	no	no	yes	516	94	no	31	yes
+							no	yes	no							volatile-lfu	3	yes	yes	yes	452	221	yes	7	yes
+							yes	no	no	yes	5	86	10	74		allkeys-random	4	no	no	no	498	122	yes	11	yes
+							yes	yes	yes							allkeys-lfu	7	no	yes	no	319	151	no	9	yes
+							yes	no	yes							allkeys-lfu	5	no	yes	yes	723	193	no	17	yes
+							no	yes	yes							volatile-lru	3	yes	no	no	389	65	no	4	no
+							no	no	yes							allkeys-random	4	yes	no	no	476	194	no	17	no
+							yes	no	no	yes	22	94	17	85		allkeys-lru	5	no	no	no	360	161	yes	39	no
+							no	no	no							volatile-random	5	yes	no	yes	394	195	no	5	no
+							no	yes	yes							noeviction	3	no	yes	yes	363	174	no	21	no
+							no	no	yes							volatile-random	6	yes	yes	no	525	49	no	38	yes
+							yes	yes	yes							allkeys-lru	7	yes	yes	no	442	135	no	1	yes
+							yes	no	no							noeviction	6	no	no	yes	554	153	no	2	no
+							yes	no	yes	yes	21	90	7	89		volatile-lru	7	yes	no	no	515	145	yes	38	no
+							yes	no	no							noeviction	5	yes	no	yes	729	151	no	33	no
+							no	yes	no	yes	30	98	14	74		volatile-random	7	yes	no	no	479	245	yes	3	yes
+							no	no	yes							allkeys-lfu	3	yes	no	no	636	103	yes	14	yes
+							yes	yes	yes	yes	29	86	2	76		volatile-random	5	yes	no	no	535	125	no	32	yes
+							no	no	yes	yes	8	93	30	84		noeviction	3	yes	no	no	553	82	yes	5	yes
+							no	no	yes	yes	5	91	29	79		volatile-lru	4	no	yes	no	589	98	no	17	no
+							no	yes	no							volatile-ttl	3	no	no	yes	394	47	yes	13	no
+							no	yes	no							allkeys-random	3	yes	no	yes	561	81	yes	10	yes
+							yes	yes	yes							volatile-lfu	5	no	no	yes	579	231	yes	17	yes
+							yes	no	no	yes	15	80	30	89		allkeys-random	5	yes	yes	no	393	160	no	23	no
+							yes	yes	no	yes	12	75	6	87		allkeys-lfu	3	no	yes	yes	742	187	yes	26	no
+							no	yes	no							volatile-ttl	6	no	yes	yes	593	182	no	6	yes
+							no	no	no							noeviction	5	no	no	no	259	214	no	17	yes
+							yes	no	yes							allkeys-lfu	5	no	no	yes	599	53	no	10	yes
+							no	no	no	yes	29	86	7	74		allkeys-random	4	no	yes	yes	308	221	no	28	yes
+							yes	yes	no	yes	21	98	25	84		volatile-lfu	4	yes	no	no	429	156	yes	33	yes
+							no	yes	yes	yes	4	85	9	82		allkeys-lfu	7	no	no	yes	384	87	no	33	no
+							yes	yes	no	yes	23	84	27	72		volatile-ttl	7	yes	yes	yes	525	165	no	5	yes
+							yes	yes	yes							allkeys-lfu	5	no	no	yes	678	151	no	36	yes
+							no	no	no	yes	22	71	26	83		noeviction	3	no	yes	yes	348	172	no	35	yes
+							yes	yes	yes							volatile-lru	7	no	no	yes	517	99	yes	30	yes
+							yes	no	yes	yes	27	87	10	88		noeviction	6	yes	yes	yes	526	46	no	4	yes
+							yes	yes	no	yes	4	80	18	85		volatile-ttl	5	yes	no	yes	487	107	yes	31	no
+							yes	no	yes	yes	15	73	9	87		allkeys-lru	3	yes	no	yes	528	218	no	10	yes
+							no	yes	yes							noeviction	3	no	yes	no	652	37	yes	18	no
+							yes	yes	yes							volatile-ttl	5	yes	yes	yes	475	106	no	40	no
+							yes	no	yes							allkeys-random	7	no	no	no	583	245	yes	28	no
+							no	yes	yes							allkeys-lru	3	yes	no	yes	750	126	no	33	no
+							no	yes	no	yes	4	72	30	70		allkeys-lfu	4	yes	yes	no	435	83	yes	36	no
+							no	yes	no							volatile-lru	5	no	no	no	335	64	no	15	yes
+							yes	yes	yes	yes	22	74	20	72		allkeys-random	3	no	no	yes	576	195	no	28	yes
+							yes	yes	no							volatile-lru	3	no	no	yes	514	35	no	6	yes
+							no	no	no							noeviction	7	yes	no	yes	380	157	no	16	no
+							no	no	yes							volatile-lfu	3	yes	no	no	357	194	yes	19	no
+							no	yes	no							allkeys-lru	3	yes	yes	no	555	94	yes	1	no
+							no	yes	no							allkeys-random	4	no	no	yes	642	45	no	15	no
+							yes	no	yes	yes	27	78	4	81		volatile-lru	7	no	yes	yes	337	156	yes	3	no
+							no	yes	yes	yes	30	82	7	74		volatile-ttl	7	yes	yes	no	724	108	yes	24	no
+							no	yes	no							volatile-ttl	4	yes	yes	no	646	119	yes	15	yes
+							yes	yes	yes							volatile-random	3	yes	no	yes	432	63	no	31	no
+							no	no	no	yes	26	77	19	70		allkeys-lfu	7	no	no	yes	530	184	yes	21	no
+							yes	no	yes							noeviction	3	yes	yes	no	418	178	no	8	yes
+							no	yes	yes							volatile-random	6	no	yes	yes	613	226	yes	28	no
+							no	yes	yes	yes	26	87	13	83		noeviction	6	yes	yes	yes	476	179	yes	15	yes
+							yes	yes	no							volatile-ttl	7	yes	yes	no	546	77	no	23	no
+							no	no	yes	yes	1	75	21	74		noeviction	4	no	yes	yes	626	114	yes	39	no
+							yes	no	no	yes	17	83	12	80		noeviction	7	no	yes	yes	289	130	no	1	no
+							yes	no	no	yes	1	96	14	78		allkeys-lru	5	no	no	no	635	117	no	14	no
+							yes	no	no							allkeys-random	5	no	yes	no	526	244	yes	34	no
+							yes	no	no							allkeys-lru	7	no	no	yes	690	29	no	2	yes
+							no	no	yes							volatile-lfu	3	no	yes	no	300	125	no	22	yes
+							no	yes	no							volatile-random	3	yes	no	no	607	62	yes	19	no
+							no	yes	yes							volatile-ttl	7	no	no	yes	681	47	yes	30	no
+							yes	yes	no							allkeys-lfu	6	no	no	yes	574	113	yes	17	no
+							no	yes	yes							noeviction	3	yes	no	no	322	236	no	12	no
+							yes	yes	yes							allkeys-random	5	yes	yes	no	613	37	no	29	yes
+							no	no	no	yes	12	92	14	77		noeviction	5	no	no	yes	488	140	yes	19	yes
+							no	no	yes							volatile-ttl	3	no	yes	no	536	80	no	34	no
+							yes	yes	no	yes	19	85	21	82		volatile-lfu	4	yes	yes	yes	521	180	yes	17	no
+							no	yes	yes							volatile-lru	5	yes	no	no	470	96	no	40	no
+							no	no	no							allkeys-lfu	5	no	yes	no	529	208	no	35	no
+							no	yes	yes	yes	18	98	12	71		volatile-random	7	yes	no	yes	277	153	no	19	yes
+							no	yes	no	yes	7	91	9	90		allkeys-random	5	no	yes	no	278	113	no	37	no
+							yes	no	no							volatile-ttl	7	no	no	no	716	200	no	24	yes
+							yes	yes	yes	yes	22	76	6	85		allkeys-lru	4	no	yes	yes	278	254	no	31	yes
+							yes	yes	yes	yes	8	73	3	87		volatile-ttl	5	yes	no	no	462	124	no	40	yes
+							yes	no	yes							volatile-lru	3	no	no	no	552	190	no	5	yes
+							yes	yes	no	yes	1	86	19	76		volatile-lfu	7	no	no	yes	661	184	no	6	no
+							no	yes	yes	yes	23	85	4	71		volatile-random	4	yes	no	yes	541	234	no	8	yes
+							no	yes	no							volatile-ttl	6	no	no	yes	708	236	yes	29	no
+							yes	no	yes							allkeys-random	6	no	no	no	440	77	no	18	no
+							yes	yes	no							allkeys-random	4	no	yes	yes	555	248	yes	12	no
+							no	yes	no	yes	26	95	17	72		volatile-lru	4	no	yes	no	659	226	no	5	no
+							yes	yes	no							volatile-random	6	no	yes	yes	601	252	no	8	yes
+							yes	no	no	yes	21	92	18	84		volatile-ttl	3	no	yes	no	346	240	yes	25	no
+							yes	no	no	yes	28	99	3	72		volatile-ttl	7	yes	yes	no	704	127	no	20	no
+							no	yes	yes							volatile-lru	7	no	no	no	628	151	no	24	yes
+							no	yes	yes							volatile-ttl	4	no	no	no	702	64	yes	15	yes
+							no	no	yes	yes	29	96	10	72		volatile-ttl	4	yes	yes	yes	402	238	no	25	no
+							no	yes	yes							allkeys-lru	6	no	no	no	418	42	no	15	yes
+							yes	no	yes	yes	29	99	10	74		allkeys-random	5	yes	no	yes	355	202	yes	24	yes
+							no	no	yes	yes	27	76	10	90		allkeys-random	4	no	yes	yes	719	105	no	30	yes
+							yes	no	yes							noeviction	5	no	yes	yes	708	160	no	12	yes
+							no	no	yes							volatile-lru	6	no	yes	no	520	116	yes	32	no
+							yes	no	yes	yes	18	72	7	89		volatile-lfu	7	no	yes	yes	440	242	no	30	yes
+							yes	no	yes							volatile-lru	4	no	no	no	321	176	no	39	no
+							no	no	yes	yes	3	93	18	71		allkeys-lfu	3	yes	yes	no	626	149	yes	13	no
+							yes	yes	no	yes	2	100	25	82		volatile-random	6	yes	yes	yes	745	129	yes	31	yes
+							yes	no	no	yes	22	77	18	76		volatile-lfu	6	yes	yes	yes	302	101	no	12	yes
+							yes	yes	yes							volatile-lfu	4	no	yes	yes	291	67	yes	19	yes
+							no	yes	no							volatile-random	3	yes	yes	no	456	68	yes	34	yes
